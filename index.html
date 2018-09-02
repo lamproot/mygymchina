@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<!-- saved from url=(0046)http://hd.mi.com/f/zt/hd/2016051101/index.html -->
+<html lang="zh-CN" xml:lang="zh-CN" style="font-size: 14.2222px;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<title>Demo</title>
+	<meta name="description" content="">
+	<script src="./Demo_files/hm.js"></script><script>!function(n){var e=n.document,t=e.documentElement,i=720,o=i/32,a="orientationchange"in n?"orientationchange":"resize",d=function(){var n=t.clientWidth||320,n=n>720?720:320>n?320:n;t.style.fontSize=n/o+"px"};e.addEventListener&&n.addEventListener(a,d,!1),d()}(window);</script>
+	<link rel="stylesheet" type="text/css" href="./Demo_files/mimax.css">
+ </head>
+<body>
+	<div class="chat">
+		<div class="box_bd scroll-wrapper">
+			<canvas id="emoji" class="emoji-canvas" width="720" height="1500"></canvas>
+			<div class="scroll-content J_scrollContent">
+				<div class="chatContent" id="chatContent">
+
+			  	</div>
+			</div>
+			<div class="train J_train">
+				<img data-origin="http://c1.mifile.cn/f/i/hd/2016051101/train.gif" alt="火车">
+			</div>
+		</div>
+		<div class="box_ft close">
+			<div class="input-wrapper">
+				<p class="J_noticeInput">开始了解</p>
+				<img src="./Demo_files/input-down.png" alt="">
+			</div>
+
+			<div class="choice-wrapper J_choiceWrapper">
+				<ul class="main-choice J_choice J_mainChoice" data-choice="0">
+					<li class="J_liNext li-3" data-target-dialog="1" data-target-choice="2">
+						<a href="javascript:void(0);" onclick="_hmt.push([&#39;_trackEvent&#39;,&#39;mimaxH5&#39;,&#39;开始了解&#39;]);">开始了解</a>
+					</li>
+					<!-- <li class="J_liNext li-3" data-target-dialog="2" data-target-choice="2_1">
+						<a href="javascript:void(0);" onclick="_hmt.push([&#39;_trackEvent&#39;,&#39;mimaxH5&#39;,&#39;存储多大&#39;]);">存储多大</a>
+					</li> -->
+					<!-- <li class="J_liNext li-3" data-target-dialog="3">
+						<a href="javascript:void(0);" onclick="_hmt.push([&#39;_trackEvent&#39;,&#39;mimaxH5&#39;,&#39;电量多大&#39;]);">电量多大</a>
+					</li>
+					<br>
+					<li class="J_liNext li-3" data-target-dialog="4" data-target-choice="4">
+						<a href="javascript:void(0);" onclick="_hmt.push([&#39;_trackEvent&#39;,&#39;mimaxH5&#39;,&#39;配置价格&#39;]);">配置价格</a>
+					</li>
+					<li class="J_liNext li-3" data-target-dialog="5">
+						<a href="javascript:void(0);" onclick="_hmt.push([&#39;_trackEvent&#39;,&#39;mimaxH5&#39;,&#39;问颜值&#39;]);">问颜值</a>
+					</li>
+					<li class="J_liNext li-3" data-target-dialog="6" data-target-choice="4">
+						<a href="javascript:void(0);" onclick="_hmt.push([&#39;_trackEvent&#39;,&#39;mimaxH5&#39;,&#39;怎么买&#39;]);">怎么买</a>
+					</li>
+					<br>
+					<li class="J_liNext li-3" data-target-dialog="7" data-target-choice="7_1">
+						<a href="javascript:void(0);" onclick="_hmt.push([&#39;_trackEvent&#39;,&#39;mimaxH5&#39;,&#39;我是彩蛋&#39;]);">我是彩蛋</a>
+					</li>
+					<li class="J_liNext li-3" data-target-dialog="8">
+						<a href="javascript:void(0);" onclick="_hmt.push([&#39;_trackEvent&#39;,&#39;mimaxH5&#39;,&#39;求红包&#39;]);">求红包</a>
+					</li>
+					<li class="J_liNext J_finishDialog li-3" data-target-dialog="9" data-continue="false">
+						<a href="javascript:void(0);" onclick="_hmt.push([&#39;_trackEvent&#39;,&#39;mimaxH5&#39;,&#39;不聊了&#39;]);">不聊了</a>
+					</li> -->
+				</ul>
+
+
+
+				<ul class="J_choice" data-choice="2">
+					<li class="J_liNext li-2 li-h" data-target-dialog="2" data-target-choice="3">
+						<a href="javascript:void(0);" onclick="_hmt.push([&#39;_trackEvent&#39;,&#39;mimaxH5&#39;,&#39;了解课程&#39;]);">了解课程</a>
+					</li>
+				</ul>
+
+				<ul class="J_choice" data-choice="3">
+					<li class="J_liNext li-2 li-h" data-target-dialog="3" data-target-choice="4">
+						<a href="javascript:void(0);" onclick="_hmt.push([&#39;_trackEvent&#39;,&#39;mimaxH5&#39;,&#39;废话少说，来点干货儿&#39;]);">废话少说，来点干货儿</a>
+					</li>
+				</ul>
+
+				<ul class="J_choice" data-choice="4">
+					<li class="J_liNext li-2 li-h" data-target-dialog="4_1" data-target-choice="4">
+						<a href="javascript:void(0);" onclick="_hmt.push([&#39;_trackEvent&#39;,&#39;mimaxH5&#39;,&#39;讲座礼品&#39;]);">讲座礼品</a>
+					</li>
+					<li class="J_liNext li-2 li-h" data-target-dialog="4_2" data-target-choice="5">
+						<a href="javascript:void(0);" onclick="_hmt.push([&#39;_trackEvent&#39;,&#39;mimaxH5&#39;,&#39;优惠政策&#39;]);">优惠政策</a>
+					</li>
+				</ul>
+
+				<ul class="J_choice" data-choice="5">
+					<li class="J_liNext li-2 li-h" data-target-dialog="5" data-target-choice="">
+						<a href="javascript:void(0);" onclick="_hmt.push([&#39;_trackEvent&#39;,&#39;mimaxH5&#39;,&#39;你话真多，快点说！&#39;]);">你话真多，快点说！</a>
+					</li>
+				</ul>
+
+				<!-- <ul class="J_choice" data-choice="4">
+					<li class="J_liNext li-2 li-h" data-target-dialog="4" data-target-choice="5">
+						<a href="javascript:void(0);" onclick="_hmt.push([&#39;_trackEvent&#39;,&#39;mimaxH5&#39;,&#39;讲座礼品&#39;]);">讲座礼品</a>
+					</li>
+					<li class="J_liNext li-2 li-h" data-target-dialog="4" data-target-choice="6">
+						<a href="javascript:void(0);" onclick="_hmt.push([&#39;_trackEvent&#39;,&#39;mimaxH5&#39;,&#39;优惠政策&#39;]);">优惠政策</a>
+					</li>
+				</ul> -->
+
+
+
+				<!-- <ul class="J_choice" data-choice="1_1_1">
+					<li class="J_liNext li-2 li-h" data-target-dialog="1_2_1">
+						<a href="javascript:void(0);" onclick="_hmt.push([&#39;_trackEvent&#39;,&#39;mimaxH5&#39;,&#39;看对比&#39;]);">看对比</a>
+					</li>
+					<li class="J_liNext li-2 li-h" data-target-dialog="1_2_2">
+						<a href="javascript:void(0);" onclick="_hmt.push([&#39;_trackEvent&#39;,&#39;mimaxH5&#39;,&#39;看试用&#39;]);">看试用</a>
+					</li>
+				</ul> -->
+
+				<ul class="J_choice" data-choice="2_1">
+					<li class="J_liNext li-3 no-border bg-trsp" data-target-dialog="2_1">
+
+						<a href="javascript:void(0);" onclick="_hmt.push([&#39;_trackEvent&#39;,&#39;mimaxH5&#39;,&#39;奥斯卡&#39;]);">
+							<img src="./Demo_files/c-2-oscars.jpg" alt="30部奥斯卡最佳影片">
+							<p>30部奥斯卡最佳影片</p>
+						</a>
+					</li>
+					<li class="J_liNext li-3 no-border bg-trsp" data-target-dialog="2_2">
+
+						<a href="javascript:void(0);" onclick="_hmt.push([&#39;_trackEvent&#39;,&#39;mimaxH5&#39;,&#39;美剧&#39;]);">
+							<img src="./Demo_files/c-2-drama.jpg" alt="80集美剧">
+							<p>80集美剧</p>
+						</a>
+					</li>
+					<li class="J_liNext li-3 no-border bg-trsp" data-target-dialog="2_3">
+
+						<a href="javascript:void(0);" onclick="_hmt.push([&#39;_trackEvent&#39;,&#39;mimaxH5&#39;,&#39;海贼王&#39;]);">
+							<img src="./Demo_files/c-2-onepiece.jpg" alt="700番海贼王">
+							<p>700番海贼王</p>
+						</a>
+					</li>
+				</ul>
+
+				<ul class="sup-choice J_choice" data-choice="7_1">
+					<li class="li-3 no-border bg-trsp J_fpVideo" data-src="http://v.qq.com/iframe/player.html?vid=a0197hj5a1m&amp;tiny=0&amp;auto=0">
+
+						<a href="javascript:void(0);" onclick="_hmt.push([&#39;_trackEvent&#39;,&#39;mimaxH5&#39;,&#39;麻花第一集&#39;]);">
+							<img src="./Demo_files/c-7-1.jpg" alt="第一集">
+							<p>第一集</p>
+						</a>
+					</li>
+					<li class="li-3 no-border bg-trsp J_fpVideo" data-src="http://v.qq.com/iframe/player.html?vid=p019889oxs0&amp;tiny=0&amp;auto=0">
+
+						<a href="javascript:void(0);" onclick="_hmt.push([&#39;_trackEvent&#39;,&#39;mimaxH5&#39;,&#39;麻花第二集&#39;]);">
+							<img src="./Demo_files/c-7-2.jpg" alt="第二集">
+							<p>第二集</p>
+						</a>
+					</li>
+					<li class="li-3 no-border bg-trsp J_fpVideo" data-src="http://v.qq.com/iframe/player.html?vid=c01985i2nk0&amp;tiny=0&amp;auto=0">
+
+						<a href="javascript:void(0);" onclick="_hmt.push([&#39;_trackEvent&#39;,&#39;mimaxH5&#39;,&#39;麻花第三集&#39;]);">
+							<img src="./Demo_files/c-7-3.jpg" alt="第三集">
+							<p>第三集</p>
+						</a>
+					</li>
+					<ul class="ul-sub">
+						<li class="J_liNext li-f-2 no-br" data-target-dialog="7_1">
+							<a href="javascript:void(0);" onclick="_hmt.push([&#39;_trackEvent&#39;,&#39;mimaxH5&#39;,&#39;看完了&#39;]);">看完了</a>
+						</li>
+						<li class="J_liNext li-f-2 no-br" data-target-dialog="7_1">
+							<a href="javascript:void(0);" onclick="_hmt.push([&#39;_trackEvent&#39;,&#39;mimaxH5&#39;,&#39;不看了&#39;]);">不看了</a>
+						</li>
+					</ul>
+				</ul>
+
+				<!-- <ul class="main-choice reg-choice J_choice J_mainChoice" data-choice="4">
+					<li class="J_liNext li-3" data-target-dialog="1" data-target-choice="1_1">
+						<a href="javascript:void(0);" onclick="_hmt.push([&#39;_trackEvent&#39;,&#39;mimaxH5&#39;,&#39;尺寸多大&#39;]);">尺寸多大</a>
+					</li>
+					<li class="J_liNext li-3" data-target-dialog="2" data-target-choice="2_1">
+						<a href="javascript:void(0);" onclick="_hmt.push([&#39;_trackEvent&#39;,&#39;mimaxH5&#39;,&#39;存储多大&#39;]);">存储多大</a>
+					</li>
+					<li class="J_liNext li-3" data-target-dialog="3">
+						<a href="javascript:void(0);" onclick="_hmt.push([&#39;_trackEvent&#39;,&#39;mimaxH5&#39;,&#39;电量多大&#39;]);">电量多大</a>
+					</li>
+					<br>
+					<li class="J_liNext li-3" data-target-dialog="4" data-target-choice="4">
+						<a href="javascript:void(0);" onclick="_hmt.push([&#39;_trackEvent&#39;,&#39;mimaxH5&#39;,&#39;配置价格&#39;]);">配置价格</a>
+					</li>
+					<li class="J_liNext li-3" data-target-dialog="5">
+						<a href="javascript:void(0);" onclick="_hmt.push([&#39;_trackEvent&#39;,&#39;mimaxH5&#39;,&#39;问颜值&#39;]);">问颜值</a>
+					</li>
+					<li class="J_liNext li-3" data-target-dialog="6" data-target-choice="4">
+						<a href="javascript:void(0);" onclick="_hmt.push([&#39;_trackEvent&#39;,&#39;mimaxH5&#39;,&#39;怎么买&#39;]);">怎么买</a>
+					</li>
+					<br>
+					<li class="J_liNext li-3" data-target-dialog="7" data-target-choice="7_1">
+						<a href="javascript:void(0);" onclick="_hmt.push([&#39;_trackEvent&#39;,&#39;mimaxH5&#39;,&#39;我是彩蛋&#39;]);">我是彩蛋</a>
+					</li>
+					<li class="J_liNext li-3" data-target-dialog="8">
+						<a href="javascript:void(0);" onclick="_hmt.push([&#39;_trackEvent&#39;,&#39;mimaxH5&#39;,&#39;求红包&#39;]);">求红包</a>
+					</li>
+					<li class="J_liNext J_finishDialog li-3" data-target-dialog="9" data-continue="false">
+						<a href="javascript:void(0);" onclick="_hmt.push([&#39;_trackEvent&#39;,&#39;mimaxH5&#39;,&#39;不聊了&#39;]);">不聊了</a>
+					</li>
+					<br>
+					如果用户还没预约，显示立即预约
+					<li class="li-f-1 no-br highlight-btn" registered="false">
+						<a href="http://s1.mi.com/m/ghd/2016/0503maxyy/index.html" target="_blank" onclick="_hmt.push([&#39;_trackEvent&#39;,&#39;mimaxH5&#39;,&#39;立即预约&#39;]);">立即预约</a>
+					</li>
+				</ul> -->
+			</div>
+		</div>
+	</div>
+
+	<div class="full-pics" id="J_fullPics">
+		<div class="pic"></div>
+	</div>
+
+    <audio id="message-push-music" preload="preload">
+    	<source src="http://c1.mifile.cn/f/i/hd/2016051101/message-push.mp3" type="audio/mp3">
+    </audio>
+
+    <audio id="train-run-music" preload="none">
+    	<source src="http://c1.mifile.cn/f/i/hd/2016051101/train-run.mp3" type="audio/mp3">
+    </audio>
+
+    	<div style="display: none;" class="J_map">
+    		<div class="map-wrapper J_mapWrapper">
+    			<div class="map">
+    				<div class="map-pointer"></div>
+    			</div>
+    			<p>驾驶总时长：<span class="J_tourtime">0</span> 小时</p>
+    		</div>
+    	</div>
+
+    	<div class="fullpage-overlay video-overlay J_videoOverlay" width="1" height="1">
+    		<div class="J_videoWrapper"></div>
+    		<span class="tips-close J_videoClose"></span>
+    	</div>
+
+    	<div class="fullpage-overlay gallery-overlay J_galleryOverlay" data-gallery="1">
+    		<div class="xm-slide J_gallerySlide">
+    			<div class="xm-slide-scroll">
+					<figure>
+    					<img data-origin="./Demo_files/chengzhangjinzita.jpeg">
+    				</figure>
+
+    			</div>
+    		</div>
+    		<span class="tips-close J_galleryClose"></span>
+    	</div>
+
+		<style media="screen">
+			.father{
+				width:80%;
+				height:60%;
+				margin-top: 35%;
+				margin-left: auto; margin-right: auto;
+				background-color: #eaeaea;
+				/* writing-mode: vertical-lr; */
+				border-radius: 50px;
+			}
+			.child{
+				background-color: #eaeaea;
+				position:absolute;
+				top:0;
+				left:0;
+				right:0;
+				bottom:0;
+				width: 75%;
+				height:50%;
+				margin:auto;
+			}
+			.WxBookContent{
+				padding-top: 16px;
+			}
+			.WxBookContent .FormItemEdit {
+				background: #eaeaea;
+				/* padding: 0px 15px; */
+				padding-left:10px;
+				margin-bottom: 10px;
+				position: relative;
+			}
+			 .WxBookContent .FormItemEdit:before {
+				content: " ";
+				position: absolute;
+				left: 0px;
+				top: 0px;
+				right: 0px;
+				border-top: 1px solid #eaeaea;
+				color: #fff;
+				-webkit-transform-origin: 0 0;
+				transform-origin: 0 0;
+				-webkit-transform: scaleY(0.5);
+				transform: scaleY(0.5);
+				z-index: 5;
+			}
+			.WxBookContent .FormItemEdit:after {
+				content: " ";
+				position: absolute;
+				left: 0px;
+				bottom: 0px;
+				right: 0px;
+				border-bottom: 1px solid #eaeaea;
+				color: #fff;
+				-webkit-transform-origin: 0 100%;
+				transform-origin: 0 100%;
+				-webkit-transform: scaleY(0.5);
+				transform: scaleY(0.5);
+				z-index: 5;
+			}
+			.WxBookContent .InputTips {
+				font-size: 14px;
+				line-height: 1.5;
+				color: #fff;
+				padding: 0px 16px;
+				margin-bottom: 10px;
+				text-align: center;
+			}
+
+			input::-webkit-input-placeholder {
+         /* placeholder颜色  */
+         color: #fff;
+     }
+			 .WxBookContent .FormItemEdit .TextBox {
+				height: 14px;
+				/* width: 100%; */
+				border: 0px;
+				border-radius: 0px;
+				line-height: 16px;
+				padding: 8px 0px;
+				background: #99ccff;
+				text-align: center;
+				border:2px solid #00a2e6;
+				color:#fff;
+				font-size: 16px;
+				font-weight: normal;
+				border-radius:10px;
+			}
+			.WxBookContent .FormItemEdit .BtnClear {
+				width: 44px;
+				height: 44px;
+				background: url(../images/Mobile_bg0215.png) center center no-repeat;
+				background-size: 16px 16px;
+				position: absolute;
+				right: 0px;
+				top: 0px;
+			}
+
+			.WxBookContent .FormItemButton{
+				text-align: center;
+			    background: #00b8ec;
+			    font-size: 24px;
+			    font-weight: bold;
+			    color: #fff;
+			    padding: 5px 15px;
+			    border-radius: 15px;
+			    margin: auto;
+			    display: block;
+			    width: 50%;
+			    margin-top: 45px;
+			}
+			.formContent{
+				margin-top: 15px;
+			}
+			</style>
+			<div class="fullpage-overlay gallery-overlay-skill J_skillTestDiv" data-gallery="1">
+				<div class="skill_content">
+					<div class="father">
+						<div class="child">
+							<div class="formContent">
+								<div class="WxBookContent">
+									<div class="FormItemEdit">
+										<span><b>宝宝姓名：</b></span><input type="text" class="TextBox" placeholder="">
+									</div>
+									<div class="FormItemEdit">
+										<span><b>宝宝生日：</b></span>
+
+										<input type="date" class="TextBox" placeholder="年-月-日">
+									</div>
+									<div class="FormItemEdit">
+										<span><b>是否会员：</b></span>
+										<select class="" name="">
+											<option value="1">是</option>
+											<option value="0">否</option>
+										</select>
+									</div>
+									<div class="FormItemEdit">
+										<span><b>家长手机：</b></span><input type="text" class="TextBox" placeholder="">
+									</div>
+									<a class="FormItemButton startSkillTest">开始测试</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<span class="tips-close J_galleryClose"></span>
+			</div>
+
+    	<script type="text/javascript">
+    		var me = {
+		  		id: 'me', // 写死的，不用改
+		  		name: '' || '', // 用户昵称
+		  		avatar: '' || 'https://ss0.bdstatic.com/-0U0bnSm1A5BphGlnYG/tam-ogel/679112633afafbbfe544024ecc21b79f_121_121.jpg', // 用户头像图片 url
+		  		userId: '', // 用户id
+		  		registered: true // 用户是否已经预约
+		  	};
+		  </script>
+
+		  <script id="messageTpl" type="text/x-dot-template">
+		  	{{~it :message:index}}
+		  	<div class="clearfix">
+		  		{{? message.type == 'system'}}
+		  		<div class="message">
+		  			<p class="message_system">
+		  				<span class="content">{{=message.content}}</span>
+		  			</p>
+		  		</div>
+		  		{{??}}
+
+		  		<div class="message {{? message.author.id == 'me'}}me{{??}}others{{?}}">
+		  			<div class="avatar" data-author-id="{{=message.author.id}}">
+		  				<img src="{{=message.author.avatar}}" alt="{{=message.author.name}}">
+		  			</div>
+		  			<div class="content">
+		  				<p class="author_name">{{=message.author.name}}</p>
+		  				{{? message.type == 'plain'}}
+		  				<div class="bubble {{? message.author.id == 'me'}} bubble_primary right{{??}} bubble_default left{{?}}">
+		  					<div class="bubble_cont">
+		  						<div class="{{=message.type}}">
+		  							<pre>{{=message.content}}</pre>
+		  						</div>
+		  					</div>
+		  				</div>
+		  				{{?? message.type == 'picture'}}
+		  				<div class="bubble {{? message.author.id == 'me'}} right{{??}} left{{?}} bubble_image">
+		  					<div class="bubble_cont">
+		  						<div class="{{=message.type}}">
+		  							{{? message.extra == 'gallery'}}
+		  							<img class="J_galleryShow" data-gallery="1" src="{{=message.content}}" />
+		  							{{??}}
+		  							<img class="J_img" src="{{=message.content}}" />
+		  							{{?}}
+		  						</div>
+		  					</div>
+		  				</div>
+		  				{{?? message.type == 'video'}}
+		  				<div class="bubble {{? message.author.id == 'me'}} right{{??}} left{{?}} bubble_image">
+		  					<div class="bubble_cont">
+		  						<div class="{{=message.type}}">
+		  							<img class="J_fpVideo" src="{{=message.content.poster}}" data-src="{{=message.content.video}}" alt="">
+		  						</div>
+		  					</div>
+		  				</div>
+		  				{{?? message.type == 'animation'}}
+		  				<div class="bubble {{? message.author.id == 'me'}} right{{??}} left{{?}} bubble_image">
+		  					<div class="bubble_cont">
+		  						<div class="{{=message.type}}">
+		  							{{=message.content}}
+		  						</div>
+		  					</div>
+		  				</div>
+		  				{{?}}
+		  			</div>
+		  		</div>
+		  		{{?}}
+
+		  	</div>
+		  	{{~}}
+		  </script>
+
+		  <script src="./Demo_files/jweixin-1.0.0.js"></script>
+		  <script src="./Demo_files/milib.js"></script>
+		  <script src="./Demo_files/slide.js"></script>
+		  <script src="./Demo_files/mimax.js"></script>
+		  <script src="http://www.17sucai.com/preview/1/2014-12-26/Mobiscroll/js/mobiscroll.datetimebase.js"></script>
+		  <script src="http://www.17sucai.com/preview/1/2014-12-26/Mobiscroll/js/mobiscroll.util.datetime.js"></script>
+
+		  <script type="text/javascript">
+		  $(function () {
+		  	var nowData=new Date();
+		  	var opt= {
+		  		theme:'ios', //设置显示主题
+		  		mode:'scroller', //设置日期选择方式，这里用滚动
+		  		display:'bottom', //设置控件出现方式及样式
+		  		preset : 'datetime', //日期:年 月 日 时 分
+		  		minDate: nowData,
+		  		maxDate:new Date(nowData.getFullYear(),nowData.getMonth(),nowData.getDate()+7,22,00),
+		  //              dateFormat: 'yy-mm-dd', // 日期格式
+		  //              dateOrder: 'yymmdd', //面板中日期排列格式
+		  		stepMinute: 5, //设置分钟步长
+		  		yearText:'年',
+		  		monthText:'月',
+		  		dayText:'日',
+		  		hourText:'时',
+		  		minuteText:'分',
+		  		lang:'zh' //设置控件语言};
+		  	};
+		  	$('#dateinput').mobiscroll(opt);
+		  });
+		  </script>
+
+		<script>
+			var _hmt = _hmt || [];
+			(function() {
+				var hm = document.createElement("script");
+				hm.src = "//hm.baidu.com/hm.js?71558e7b4aa822e282e758f8dc0b88b0";
+				var s = document.getElementsByTagName("script")[0];
+				s.parentNode.insertBefore(hm, s);
+			})();
+		</script>
+
+		</body></html>
