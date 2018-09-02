@@ -91,7 +91,8 @@ function geneDialog(e) {
         type: "plain",
         author: _members.lj,
         content: "美吉姆成长金字塔" + _translate2.replace("%placehold%", "快来看看宝宝成长过程的必备技能吧"),
-        pause: 4e3
+        pause: 4e3,
+        linkplain:"openSkillTest"
     },
     {
         type: "plain",
@@ -597,7 +598,7 @@ _animation = {
     tour: $(".J_map").html()
 },
 _translate = '<span class="trans J_trans">点击翻译</span><span class="hide J_actualContent">%placehold%</span>';
-_translate2 = '<p class="openSkillTest"><span class="trans"></span><span class="J_actualContent">%placehold%</span></p>';
+_translate2 = '<p><span class="trans"></span><span class="J_actualContent">%placehold%</span></p>';
 $.fn.loadingMask = function() {
     var e = this,
     t = e.css("position").toLowerCase();
