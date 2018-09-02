@@ -48,30 +48,30 @@ function geneDialog(e) {
     };
     _members = $.extend(_members, t),
     _dialog.d0 = [
-    // {
-    //     type: "plain",
-    //     author: _members.lj,
-    //     content: "Hi，我是Mymo",
-    //     pause: 2e3
-    // },
-    // {
-    //     type: "plain",
-    //     author: _members.lj,
-    //     content: "欢迎家长朋友来到美吉姆大型父母学堂讲座现场",
-    //     //flag: "emoji-welcome"
-    // },
-    // {
-    //     type: "plain",
-    //     author: _members.lj,
-    //     content: "美吉姆成长金字塔（互动技能及发育追踪体系）已经上线很久了，您想了解吗？"
-    // },
-    // {
-    //     type: "picture",
-    //     author: _members.lj,
-    //     content: _imgFileUrl+"/chengzhangjinzita.jpeg",
-    //     extra: "gallery",
-    //     pause: 4e3
-    // },
+    {
+        type: "plain",
+        author: _members.lj,
+        content: "Hi，我是Mymo",
+        pause: 2e3
+    },
+    {
+        type: "plain",
+        author: _members.lj,
+        content: "欢迎家长朋友来到美吉姆大型父母学堂讲座现场",
+        //flag: "emoji-welcome"
+    },
+    {
+        type: "plain",
+        author: _members.lj,
+        content: "美吉姆成长金字塔（互动技能及发育追踪体系）已经上线很久了，您想了解吗？"
+    },
+    {
+        type: "picture",
+        author: _members.lj,
+        content: _imgFileUrl+"/chengzhangjinzita.jpeg",
+        extra: "gallery",
+        pause: 4e3
+    },
     {
         type: "plain",
         author: _members.lj,
@@ -94,12 +94,8 @@ function geneDialog(e) {
         pause: 4e3,
         linkplain:"openSkillTest"
     },
-    {
-        type: "plain",
-        author: _members.lj,
-        content: "了解了宝宝现阶段的成长技能，难道您就不好奇美吉姆是通过什么课程实现这些技能的吗？",
-        pause: 4e3
-    }],
+
+    ],
 
     _dialog.d2 = [{
         type: "plain",
@@ -432,7 +428,17 @@ function geneDialog(e) {
         content: "这个彩蛋很给力吧？你再问问老板们其他问题，我也一起了解一下。",
         pause: 2800
     }],
-    _dialog.dr_1 = [{
+    _dialog.dr_1 = [
+    {
+        type: "picture",
+        author: _members.lj,
+        content: _imgFileUrl+"/chengzhangjinzita.jpeg",
+    },
+    {
+        type: "plain",
+        author: _members.lj,
+        content: ""
+    },{
         type: "plain",
         author: _members.lj,
         content: "了解了宝宝现阶段的成长技能，难道您就不好奇美吉姆是通过什么课程实现这些技能的吗？"
@@ -440,7 +446,7 @@ function geneDialog(e) {
     _dialog.dr_2 = [{
         type: "plain",
         author: _members.lj,
-        content: "了解了宝宝现阶段的成长技能，难道您就不好奇美吉姆是通过什么课程实现这些技能的吗？"
+        content: ""
     }],
     _dialog.dr_3 = [{
         type: "plain",
@@ -580,6 +586,7 @@ function(e) {
     }
 } (window);
 var _imgUrl = "http://c1.mifile.cn/f/i/hd/2016051101/",
+_skillText,
 _imgFileUrl = "./Demo_files/",
 _userName = me.name,
 _dialog = {},
@@ -760,6 +767,13 @@ $(document).ready(function() {
         $(".J_inputWrapper").removeClass("opened"),
         $(".J_choiceWrapper").removeClass("opened")
     }
+    function monthDiff(d1, d2) {
+    var months;
+    months = (d2.getFullYear() - d1.getFullYear()) * 12;
+    months -= d1.getMonth() + 1;
+    months += d2.getMonth();
+    return months <= 0 ? 0 : months;
+    }
     function p() {
         n(),
         geneDialog(_userName),
@@ -838,6 +852,48 @@ $(document).ready(function() {
                 }
             })
         }),
+
+        $(document).on("click", ".startSkillTest",
+        function(e) {
+            var t = $(this);
+            //alert($(".Box_name").val())
+            var Box_name = $(".Box_name").val();
+            var Box_birthday = $(".Box_birthday").val();
+            var Box_isvip = $(".Box_isvip").val();
+            var Box_mobile = $(".Box_mobile").val();
+
+            if (!Box_birthday || Box_birthday == undefined) {
+                alert("请选择宝宝生日");return false;
+            }
+            var stopDate = new Date();
+            var month = monthDiff(new Date(Box_birthday),stopDate)
+
+            if (month <= 6 && month > 1) {
+                $(".J_skillTestDiv").hide()
+                _skillText = "您宝宝的月龄是 "+month+"个月，您需要掌握上图中的必备技能 \n 可以参加：\n 美吉姆欢动课：学阶一"
+                _skillImg = _imgFileUrl+"/成长金字塔2.png";
+
+                _dialog.dr_1[0]['content'] = _skillImg;
+                _dialog.dr_1[1]['content'] = _skillText;
+            }
+
+
+
+            l(_dialog.dr_1)
+
+            //alert(month)
+            // "true" != $(this).attr("registered") && $.ajax({
+            //     url: "http://xmt.www.mi.com/index.php?id=338&do=book",
+            //     type: "POST",
+            //     dataType: "json",
+            //     success: function(e) {
+            //         e && 1e3 === e.header.code ? (t.html("您已成功预约").attr("registered", "true"), l(_dialog.dreg_1)) : l(_dialog.dreg_2)
+            //     }
+            // })
+        }),
+
+
+
         $(document).on("click", ".J_fpVideo",
         function(e) {
             var t = $(this).attr("data-src"),
