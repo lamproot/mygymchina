@@ -597,7 +597,7 @@ _animation = {
     tour: $(".J_map").html()
 },
 _translate = '<span class="trans J_trans">点击翻译</span><span class="hide J_actualContent">%placehold%</span>';
-_translate2 = '<span class="trans"></span><span class="J_actualContent openSkillTest">%placehold%</span>';
+_translate2 = '<p class="openSkillTest"><span class="trans"></span><span class="J_actualContent">%placehold%</span></p>';
 $.fn.loadingMask = function() {
     var e = this,
     t = e.css("position").toLowerCase();
