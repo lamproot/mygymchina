@@ -866,20 +866,20 @@ $(document).ready(function() {
                 alert("请选择宝宝生日");return false;
             }
             var stopDate = new Date();
-            alert(Box_birthday)
-            alert(new Date(Box_birthday))
-            alert(stopDate)
+            console.log(Box_birthday);
+            console.log(new Date(Box_birthday));
+            console.log(stopDate);
             var month = monthDiff(new Date(Box_birthday),stopDate)
-            alert(month)
-            if (month <= 6 && month > 1) {
-                $(".J_skillTestDiv").hide();
+            //alert(month)
+
+            //金字塔1
+            if (month <= 6 && month > 0) {
                 _skillText = "您宝宝的月龄是 "+month+"个月，您需要掌握上图中的必备技能 \n 可以参加：\n 美吉姆欢动课：学阶一"
                 _skillImg = _imgFileUrl+"/成长金字塔2.png";
 
                 _dialog.dr_1[0]['content'] = _skillImg;
                 _dialog.dr_1[1]['content'] = _skillText;
             }
-
 
 
             l(_dialog.dr_1)
