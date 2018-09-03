@@ -876,7 +876,7 @@ $(document).ready(function() {
             if (month <= 6 && month >= 0) {
                 $(".J_skillTestDiv").hide();
                 _skillText = "您宝宝的月龄是 "+month+"个月，您需要掌握上图中的必备技能 \n 可以参加：\n 美吉姆欢动课：学阶一";
-                _skillImg = _imgFileUrl+"/成长金字塔2.png";
+                _skillImg = _imgFileUrl+"/成长金字塔1.jpg";
 
                 _dialog.dr_1[0]['content'] = _skillImg;
                 _dialog.dr_1[1]['content'] = _skillText;
