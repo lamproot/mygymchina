@@ -48,30 +48,30 @@ function geneDialog(e) {
     };
     _members = $.extend(_members, t),
     _dialog.d0 = [
-    {
-        type: "plain",
-        author: _members.lj,
-        content: "Hi，我是Mymo",
-        pause: 2e3
-    },
-    {
-        type: "plain",
-        author: _members.lj,
-        content: "欢迎家长朋友来到美吉姆大型父母学堂讲座现场",
-        //flag: "emoji-welcome"
-    },
-    {
-        type: "plain",
-        author: _members.lj,
-        content: "美吉姆成长金字塔（互动技能及发育追踪体系）已经上线很久了，您想了解吗？"
-    },
-    {
-        type: "picture",
-        author: _members.lj,
-        content: _imgFileUrl+"/chengzhangjinzita.jpeg",
-        extra: "gallery",
-        pause: 4e3
-    },
+    // {
+    //     type: "plain",
+    //     author: _members.lj,
+    //     content: "Hi，我是Mymo",
+    //     pause: 2e3
+    // },
+    // {
+    //     type: "plain",
+    //     author: _members.lj,
+    //     content: "欢迎家长朋友来到美吉姆大型父母学堂讲座现场",
+    //     //flag: "emoji-welcome"
+    // },
+    // {
+    //     type: "plain",
+    //     author: _members.lj,
+    //     content: "美吉姆成长金字塔（互动技能及发育追踪体系）已经上线很久了，您想了解吗？"
+    // },
+    // {
+    //     type: "picture",
+    //     author: _members.lj,
+    //     content: _imgFileUrl+"/chengzhangjinzita.jpeg",
+    //     extra: "gallery",
+    //     pause: 4e3
+    // },
     {
         type: "plain",
         author: _members.lj,
