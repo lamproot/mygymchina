@@ -107,6 +107,11 @@ function geneDialog(e) {
         author: _members.lj,
         content: "美吉姆三大课程介绍" + _translate2.replace("%placehold%", "欢动课、艺术课、音乐课课程介绍"),
         pause: 4e3
+    },
+    {
+        type: "picture",
+        author: _members.lj,
+        content: _imgFileUrl+"/chengzhangjinzita.jpeg",
     }
     ],
     _dialog.d3 = [{
@@ -169,7 +174,7 @@ function geneDialog(e) {
     {
         type: "picture",
         author: _members.lj,
-        content: _imgFileUrl+"/chengzhangjinzita.jpeg",
+        content: _imgFileUrl+"/401536058855_.pic.jpg",
     },
     {
         type: "plain",
@@ -375,59 +380,59 @@ function geneDialog(e) {
     //     type: "system",
     //     content: "本活动页面中涉及图片、数据及宣传用语的详细说明，来源自小米官网mi.com，以官网信息为准；相关信息不作为买卖交易条件，仅供参考；因客观环境变化，测试数据会有偏差；活动页面中合伙人及沈腾对话均为活动用语，不代表本人言论立场。"
     // }],
-    _dialog.d2_1 = [{
-        type: "plain",
-        author: _members.me,
-        content: "我觉得能放个30部影片已经很大了！"
-    },
-    {
-        type: "plain",
-        author: _members.wc,
-        content: "那你可就小看小米Max了，它最大可是能放下700集左右的海贼王的！"
-    },
-    {
-        type: "plain",
-        author: _members.me,
-        content: "果然是大容量啊！"
-    }],
-    _dialog.d2_2 = [{
-        type: "plain",
-        author: _members.me,
-        content: "我觉得能放个80集美剧已经很牛了！"
-    },
-    {
-        type: "plain",
-        author: _members.wc,
-        content: "那你可就小看小米Max了，它最大可是能放下700集左右的海贼王的！",
-        pause: 3e3
-    },
-    {
-        type: "plain",
-        author: _members.me,
-        content: "果然是大容量啊！"
-    }],
-    _dialog.d2_3 = [{
-        type: "plain",
-        author: _members.me,
-        content: "既然容量这么大，应该能放一整部海贼王吧？"
-    },
-    {
-        type: "plain",
-        author: _members.wc,
-        content: "你太厉害了，小米Max通过扩展卡最大存储达到256GB，700集左右的《海贼王》存进去杠杠的！",
-        pause: 3e3
-    },
-    {
-        type: "plain",
-        author: _members.me,
-        content: "果然是大容量啊！"
-    }],
-    _dialog.d7_1 = [{
-        type: "plain",
-        author: _members.st,
-        content: "这个彩蛋很给力吧？你再问问老板们其他问题，我也一起了解一下。",
-        pause: 2800
-    }],
+    // _dialog.d2_1 = [{
+    //     type: "plain",
+    //     author: _members.me,
+    //     content: "我觉得能放个30部影片已经很大了！"
+    // },
+    // {
+    //     type: "plain",
+    //     author: _members.wc,
+    //     content: "那你可就小看小米Max了，它最大可是能放下700集左右的海贼王的！"
+    // },
+    // {
+    //     type: "plain",
+    //     author: _members.me,
+    //     content: "果然是大容量啊！"
+    // }],
+    // _dialog.d2_2 = [{
+    //     type: "plain",
+    //     author: _members.me,
+    //     content: "我觉得能放个80集美剧已经很牛了！"
+    // },
+    // {
+    //     type: "plain",
+    //     author: _members.wc,
+    //     content: "那你可就小看小米Max了，它最大可是能放下700集左右的海贼王的！",
+    //     pause: 3e3
+    // },
+    // {
+    //     type: "plain",
+    //     author: _members.me,
+    //     content: "果然是大容量啊！"
+    // }],
+    // _dialog.d2_3 = [{
+    //     type: "plain",
+    //     author: _members.me,
+    //     content: "既然容量这么大，应该能放一整部海贼王吧？"
+    // },
+    // {
+    //     type: "plain",
+    //     author: _members.wc,
+    //     content: "你太厉害了，小米Max通过扩展卡最大存储达到256GB，700集左右的《海贼王》存进去杠杠的！",
+    //     pause: 3e3
+    // },
+    // {
+    //     type: "plain",
+    //     author: _members.me,
+    //     content: "果然是大容量啊！"
+    // }],
+    // _dialog.d7_1 = [{
+    //     type: "plain",
+    //     author: _members.st,
+    //     content: "这个彩蛋很给力吧？你再问问老板们其他问题，我也一起了解一下。",
+    //     pause: 2800
+    // }],
     _dialog.dr_1 = [
     {
         type: "picture",
@@ -447,46 +452,46 @@ function geneDialog(e) {
         type: "plain",
         author: _members.lj,
         content: ""
-    }],
-    _dialog.dr_3 = [{
-        type: "plain",
-        author: _members.lwq,
-        content: "再看看其他方面的特性吧，关于小米Max我们还有很多要跟你分享"
-    }],
-    _dialog.dv_1 = [{
-        type: "plain",
-        author: _members.lb,
-        content: "怎么样？够大吗？"
-    },
-    {
-        type: "plain",
-        author: _members.me,
-        content: "好大，好轻薄！小米的妹子也很美" + gif.lol + gif.lol + gif.lol
-    },
-    {
-        type: "plain",
-        author: _members.hf,
-        content: "同感，哈哈..还有啥感兴趣的？"
-    }],
-    _dialog.dv_2 = [{
-        type: "system",
-        content: "视频通话已拒绝"
-    },
-    {
-        type: "plain",
-        author: _members.lwq,
-        content: "了解点儿别的吧？"
-    }],
-    _dialog.dreg_1 = [{
-        type: "plain",
-        author: _members.lb,
-        content: "赞！你已经成功预约了。5月17日可以到小米网来购买" + gif.lol
-    }],
-    _dialog.dreg_2 = [{
-        type: "plain",
-        author: _members.hf,
-        content: "系统说预约失败，再点一下试试"
     }]
+    // _dialog.dr_3 = [{
+    //     type: "plain",
+    //     author: _members.lwq,
+    //     content: "再看看其他方面的特性吧，关于小米Max我们还有很多要跟你分享"
+    // }],
+    // _dialog.dv_1 = [{
+    //     type: "plain",
+    //     author: _members.lb,
+    //     content: "怎么样？够大吗？"
+    // },
+    // {
+    //     type: "plain",
+    //     author: _members.me,
+    //     content: "好大，好轻薄！小米的妹子也很美" + gif.lol + gif.lol + gif.lol
+    // },
+    // {
+    //     type: "plain",
+    //     author: _members.hf,
+    //     content: "同感，哈哈..还有啥感兴趣的？"
+    // }],
+    // _dialog.dv_2 = [{
+    //     type: "system",
+    //     content: "视频通话已拒绝"
+    // },
+    // {
+    //     type: "plain",
+    //     author: _members.lwq,
+    //     content: "了解点儿别的吧？"
+    // }],
+    // _dialog.dreg_1 = [{
+    //     type: "plain",
+    //     author: _members.lb,
+    //     content: "赞！你已经成功预约了。5月17日可以到小米网来购买" + gif.lol
+    // }],
+    // _dialog.dreg_2 = [{
+    //     type: "plain",
+    //     author: _members.hf,
+    //     content: "系统说预约失败，再点一下试试"
+    // }]
 } !
 function(e) {
     function t(e) {
@@ -875,13 +880,60 @@ $(document).ready(function() {
             //金字塔1
             if (month <= 6 && month >= 0) {
                 $(".J_skillTestDiv").hide();
-                _skillText = "您宝宝的月龄是 "+month+"个月，您需要掌握上图中的必备技能 \n 可以参加：\n 美吉姆欢动课：学阶一";
+                _skillText = "您宝宝的月龄是"+month+"个月，您需要掌握上图中的必备技能 \n 可以参加：\n 美吉姆欢动课：学阶一";
                 _skillImg = _imgFileUrl+"/成长金字塔1.jpg";
-
                 _dialog.dr_1[0]['content'] = _skillImg;
                 _dialog.dr_1[1]['content'] = _skillText;
             }
 
+            //金字塔2
+            if (month <= 13 && month >= 7) {
+                $(".J_skillTestDiv").hide();
+                _skillText = "您宝宝的月龄是"+month+"个月，您需要掌握上图中的必备技能 \n可以参加： \n 美吉姆欢动课：学阶二 \n 美吉姆音乐课";
+                _skillImg = _imgFileUrl+"/成长金字塔2.jpg";
+                _dialog.dr_1[0]['content'] = _skillImg;
+                _dialog.dr_1[1]['content'] = _skillText;
+            }
+            //金字塔3
+            if (month <= 22 && month >= 14) {
+                $(".J_skillTestDiv").hide();
+                _skillText = "您宝宝的月龄是"+month+"个月，您需要掌握上图中的必备技能 \n可以参加： \n 美吉姆欢动课：学阶三 \n 美吉姆艺术课：学阶一 \n 美吉姆音乐课";
+                _skillImg = _imgFileUrl+"/成长金字塔3.jpg";
+                _dialog.dr_1[0]['content'] = _skillImg;
+                _dialog.dr_1[1]['content'] = _skillText;
+            }
+            //金字塔4
+            if (month <= 30 && month >= 23) {
+                $(".J_skillTestDiv").hide();
+                _skillText = "您宝宝的月龄是"+month+"个月，您需要掌握上图中的必备技能 \n可以参加： \n 美吉姆欢动课：学阶四 \n 美吉姆艺术课：学阶一 \n 美吉姆音乐课";
+                _skillImg = _imgFileUrl+"/成长金字塔4.jpg";
+                _dialog.dr_1[0]['content'] = _skillImg;
+                _dialog.dr_1[1]['content'] = _skillText;
+            }
+            //金字塔5
+            if (month <= 42 && month >= 31) {
+                $(".J_skillTestDiv").hide();
+                _skillText = "您宝宝的月龄是"+month+"个月，您需要掌握上图中的必备技能 \n可以参加： \n 美吉姆欢动课：学阶五 \n 美吉姆艺术课：学阶二 \n 美吉姆音乐课";
+                _skillImg = _imgFileUrl+"/成长金字塔4.jpg";
+                _dialog.dr_1[0]['content'] = _skillImg;
+                _dialog.dr_1[1]['content'] = _skillText;
+            }
+            //金字塔6 43 - 54
+            if (month <= 54 && month >= 43) {
+                $(".J_skillTestDiv").hide();
+                _skillText = "您宝宝的月龄是"+month+"个月，您需要掌握上图中的必备技能 \n可以参加： \n 美吉姆欢动课：学阶六 \n 美吉姆艺术课：学阶二 \n 美吉姆音乐课";
+                _skillImg = _imgFileUrl+"/成长金字塔4.jpg";
+                _dialog.dr_1[0]['content'] = _skillImg;
+                _dialog.dr_1[1]['content'] = _skillText;
+            }
+            //金字塔7 55 - 72
+            if (month <= 72 && month >= 55) {
+                $(".J_skillTestDiv").hide();
+                _skillText = "您宝宝的月龄是"+month+"个月，您需要掌握上图中的必备技能 \n可以参加： \n 美吉姆欢动课： \n 美吉姆艺术课：学阶二 \n 美吉姆音乐课";
+                _skillImg = _imgFileUrl+"/成长金字塔4.jpg";
+                _dialog.dr_1[0]['content'] = _skillImg;
+                _dialog.dr_1[1]['content'] = _skillText;
+            }
 
             l(_dialog.dr_1)
 
