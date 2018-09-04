@@ -69,7 +69,6 @@ function geneDialog(e) {
     //     type: "picture",
     //     author: _members.lj,
     //     content: _imgFileUrl+"/chengzhangjinzita.jpeg",
-    //     extra: "gallery",
     //     pause: 4e3
     // },
     {
@@ -91,9 +90,11 @@ function geneDialog(e) {
         type: "plain",
         author: _members.lj,
         content: "美吉姆成长金字塔" + _translate2.replace("%placehold%", "快来看看宝宝成长过程的必备技能吧"),
-        pause: 4e3,
-        linkplain:"openSkillTest"
-    },
+        //pause: 4e3,
+        linkplain:"openSkillTest",
+        linkcolor:"blue",
+        linkimg:_imgFileUrl+"/chengzhangjinzita.jpeg"
+    }
 
     ],
 
@@ -106,12 +107,16 @@ function geneDialog(e) {
         type: "plain",
         author: _members.lj,
         content: "美吉姆三大课程介绍" + _translate2.replace("%placehold%", "欢动课、艺术课、音乐课课程介绍"),
-        pause: 4e3
+        pause: 4e3,
+        linkplain:"openKecheng",
+        linkcolor:"blue",
+        linkimg:"https://ss0.bdstatic.com/-0U0bnSm1A5BphGlnYG/tam-ogel/679112633afafbbfe544024ecc21b79f_121_121.jpg",
+
     },
     {
         type: "picture",
         author: _members.lj,
-        content: _imgFileUrl+"/chengzhangjinzita.jpeg",
+        content: _imgFileUrl+"/kecheng.jpg",
     }
     ],
     _dialog.d3 = [{
@@ -844,6 +849,25 @@ $(document).ready(function() {
                 a.hide()
             })
         }),
+        $(document).on("click", ".openKecheng",
+        function(e) {
+            "true" != $(this).attr("translated") && $(this).html($(this).siblings(".J_actualContent").html()).attr("translated", "true")
+
+alert($(".J_KechengDiv").filter('[data-gallery="1"]').html());
+            $(".J_KechengDiv").filter('[data-gallery="1"]').show();
+            $(".J_gallerySlide").css({
+                "line-height": $(window).height() + "px"
+            });
+
+            var t = $(".J_galleryClose"),
+            a = $(".J_KechengDiv");
+            t.on("click",
+            function() {
+                a.hide()
+            })
+        }),
+
+
 
         $(document).on("click", ".J_register",
         function(e) {

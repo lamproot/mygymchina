@@ -141,7 +141,20 @@
     		<span class="tips-close J_videoClose"></span>
     	</div>
 
-    	<div class="fullpage-overlay gallery-overlay J_galleryOverlay" data-gallery="1">
+    	<div class="fullpage-overlay gallery-overlay J_KechengDiv" data-gallery="1">
+    		<div class="xm-slide J_gallerySlide">
+    			<div class="xm-slide-scroll">
+					<figure>
+    					<img data-origin="./Demo_files/kecheng.jpg" src="./Demo_files/kecheng.jpg">
+    				</figure>
+
+    			</div>
+    		</div>
+    		<span class="tips-close J_galleryClose"></span>
+    	</div>
+
+
+		<div class="fullpage-overlay gallery-overlay J_galleryOverlay" data-gallery="1">
     		<div class="xm-slide J_gallerySlide">
     			<div class="xm-slide-scroll">
 					<figure>
@@ -334,8 +347,15 @@
 		  				{{? message.type == 'plain'}}
 		  				<div class="bubble {{? message.author.id == 'me'}} bubble_primary right{{??}} bubble_default left{{?}}">
 		  					<div class="bubble_cont">
-		  						<div class="{{=message.type}} {{=message.linkplain}}">
-		  							<pre>{{=message.content}}</pre>
+		  						<div class="{{=message.type}} {{=message.linkplain}} {{=message.linkcolor}}">
+
+									{{? message.linkimg}}
+										<img style="float: left;width:30%;padding-right: 6px;padding-top: 4px;" data-gallery="1" src="{{=message.linkimg}}" />
+										<pre style="float: left;width:60%;">{{=message.content}}</pre>
+		  							{{??}}
+		  								<pre>{{=message.content}}</pre>
+		  							{{?}}
+
 		  						</div>
 		  					</div>
 		  				</div>
