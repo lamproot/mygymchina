@@ -54,30 +54,30 @@ function geneDialog(e) {
         content: "Hi，我是Mymo",
         pause: 2e3
     },
-    // {
-    //     type: "plain",
-    //     author: _members.lj,
-    //     content: "欢迎家长朋友来到美吉姆大型父母学堂讲座现场",
-    //     //flag: "emoji-welcome"
-    //     pause: 2e3
-    // },
-    // {
-    //     type: "plain",
-    //     author: _members.lj,
-    //     content: "美吉姆成长金字塔（互动技能及发育追踪体系）已经上线很久了，您想了解吗？",
-    //     pause: 2e3
-    // },
-    // {
-    //     type: "picture",
-    //     author: _members.lj,
-    //     content: _imgFileUrl+"/chengzhangjinzita.jpeg",
-    //     pause: 2e3
-    // },
-    // {
-    //     type: "plain",
-    //     author: _members.lj,
-    //     content: "讲座开始之前，要不要了解下我们宝宝这个阶段的成长技能呢？"
-    // }
+    {
+        type: "plain",
+        author: _members.lj,
+        content: "欢迎家长朋友来到美吉姆大型父母学堂讲座现场",
+        //flag: "emoji-welcome"
+        pause: 2e3
+    },
+    {
+        type: "plain",
+        author: _members.lj,
+        content: "美吉姆成长金字塔（互动技能及发育追踪体系）已经上线很久了，您想了解吗？",
+        pause: 2e3
+    },
+    {
+        type: "picture",
+        author: _members.lj,
+        content: _imgFileUrl+"/chengzhangjinzita.jpeg",
+        pause: 2e3
+    },
+    {
+        type: "plain",
+        author: _members.lj,
+        content: "讲座开始之前，要不要了解下我们宝宝这个阶段的成长技能呢？"
+    }
     ],
     _dialog.d1 = [{
         type: "plain",
