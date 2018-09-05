@@ -257,12 +257,12 @@ function geneDialog(e) {
         author: _members.me,
         content: "了解更多"
     },
-    {
-        type: "plain",
-        author: _members.lj,
-        content: "美吉姆成长金字塔是美吉姆为0-6岁儿童家庭量身打造的成长解决方案，是一套针对0-6岁小朋友的互动技能及发育追踪识别体系。",
-        pause: 2e3
-    },
+    // {
+    //     type: "plain",
+    //     author: _members.lj,
+    //     content: "美吉姆成长金字塔是美吉姆为0-6岁儿童家庭量身打造的成长解决方案，是一套针对0-6岁小朋友的互动技能及发育追踪识别体系。",
+    //     pause: 2e3
+    // },
     {
         type: "plain",
         author: _members.lj,
@@ -710,7 +710,7 @@ $(document).ready(function() {
             if (Box_mobile == "" || Box_mobile === undefined) {
                 alert("请填写手机号");return false;
             }
-            
+
             var stopDate = new Date();
             console.log(Box_birthday);
             console.log(new Date(Box_birthday));
