@@ -64,13 +64,7 @@ function geneDialog(e) {
     {
         type: "plain",
         author: _members.lj,
-        content: "美吉姆成长金字塔（互动技能及发育追踪体系）已经上线很久了，您想了解吗？",
-        pause: 2e3
-    },
-    {
-        type: "picture",
-        author: _members.lj,
-        content: _imgFileUrl+"/chengzhangjinzita.jpeg",
+        content: "美吉姆成长金字塔（互动技能及发育追踪体系）已经上线很久了。",
         pause: 2e3
     },
     {
@@ -90,6 +84,13 @@ function geneDialog(e) {
         content: "美吉姆成长金字塔是美吉姆为0-6岁儿 童家庭量身打造的成长解决方案，是一 套针对0-6岁小朋友的互动技能几发育 追踪识别系统。",
         pause: 2e3
     },
+
+    {
+        type: "picture",
+        author: _members.lj,
+        content: _imgFileUrl+"/chengzhangjinzita.jpeg",
+        pause: 2e3
+    },
     {
         type: "plain",
         author: _members.lj,
@@ -107,12 +108,12 @@ function geneDialog(e) {
         author: _members.me,
         content: "了解课程"
     },
-    {
-        type: "picture",
-        author: _members.lj,
-        content: _imgFileUrl+"/kecheng.jpg",
-        pause: 2e3
-    },
+    // {
+    //     type: "picture",
+    //     author: _members.lj,
+    //     content: _imgFileUrl+"/kecheng.jpg",
+    //     pause: 2e3
+    // },
     {
         type: "plain",
         author: _members.lj,
@@ -604,12 +605,26 @@ $(document).ready(function() {
             $(".J_mainChoice").find('.J_liNext[data-target-dialog="' + a + '"]').addClass("disabled"),
             n || (n = "0"),
             s(),
-            clearTimeout(window.waitUser),
+            clearTimeout(window.waitUser);
+            if ( parseInt(a) == 1 && parseInt(n) == 6) {
+                $(".J_choiceWrapper").hide();
+            }
+
+            if ( parseInt(a) == 6 && parseInt(n) == 6) {
+                //alert("了解更多");
+                $(".J_skillTestMoreDiv").filter('[data-gallery="1"]').show();
+                var t = $(".J_galleryClose"),
+                a = $(".J_skillTestMoreDiv");
+                t.on("click",
+                function() {
+                    a.hide()
+                })
+                // $(".J_mainChoice").find(".J_liNext").not(".disabled") || clearTimeout(window.waitUser)
+                return false;
+            }
+
             l(_dialog["d" + a],
             function() {
-                if ( parseInt(a) == 1 && parseInt(n) == 6) {
-                    $(".J_choiceWrapper").hide();
-                }
                 o && (m(n, 100), window.waitUser = setTimeout(function() {
                     //var e = Math.floor(3 * Math.random() + 1);
                     //l(_dialog["dr_" + a])
