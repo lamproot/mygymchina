@@ -30,7 +30,7 @@
 
 			<div class="choice-wrapper J_choiceWrapper">
 				<ul class="main-choice J_choice J_mainChoice" data-choice="0">
-					<li class="J_liNext li-3" data-target-dialog="1" data-target-choice="2">
+					<li class="J_liNext li-3" data-target-dialog="1" data-target-choice="6">
 						<a href="javascript:void(0);" onclick="_hmt.push([&#39;_trackEvent&#39;,&#39;mimaxH5&#39;,&#39;开始了解&#39;]);">开始了解</a>
 					</li>
 					<!-- <li class="J_liNext li-3" data-target-dialog="2" data-target-choice="2_1">
@@ -61,7 +61,14 @@
 					</li> -->
 				</ul>
 
-
+				<ul class="J_choice" data-choice="6">
+					<li class="J_liNext li-2 li-h" data-target-dialog="6" data-target-choice="6">
+						<a href="javascript:void(0);" onclick="_hmt.push([&#39;_trackEvent&#39;,&#39;mimaxH5&#39;,&#39;了解更多&#39;]);">了解更多</a>
+					</li>
+					<li class="J_liNext li-2 li-h" data-target-dialog="7" data-target-choice="2">
+						<a href="javascript:void(0);" onclick="_hmt.push([&#39;_trackEvent&#39;,&#39;mimaxH5&#39;,&#39;下一步&#39;]);">下一步</a>
+					</li>
+				</ul>
 
 				<ul class="J_choice" data-choice="2">
 					<li class="J_liNext li-2 li-h" data-target-dialog="2" data-target-choice="3">
@@ -296,7 +303,7 @@
 									<div class="FormItemEdit">
 										<span><b>宝宝生日：</b></span>
 
-										<input type="date" class="TextBox Box_birthday" placeholder="年-月-日">
+										<input type="date" class="TextBox Box_birthday" placeholder="年-月-日" value="2018-09-05">
 									</div>
 									<div class="FormItemEdit">
 										<span><b>是否会员：</b></span>
@@ -321,7 +328,7 @@
     		var me = {
 		  		id: 'me', // 写死的，不用改
 		  		name: '' || '', // 用户昵称
-		  		avatar: '' || 'https://ss0.bdstatic.com/-0U0bnSm1A5BphGlnYG/tam-ogel/679112633afafbbfe544024ecc21b79f_121_121.jpg', // 用户头像图片 url
+		  		avatar: '' || './Demo_files/头像'+Math.floor(Math.random() * 5+1)+'.jpg', // 用户头像图片 url
 		  		userId: '', // 用户id
 		  		registered: false // 用户是否已经预约
 		  	};
@@ -355,7 +362,6 @@
 		  							{{??}}
 		  								<pre>{{=message.content}}</pre>
 		  							{{?}}
-
 		  						</div>
 		  					</div>
 		  				</div>

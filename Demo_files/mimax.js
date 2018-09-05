@@ -48,29 +48,31 @@ function geneDialog(e) {
     };
     _members = $.extend(_members, t),
     _dialog.d0 = [
-    // {
-    //     type: "plain",
-    //     author: _members.lj,
-    //     content: "Hi，我是Mymo",
-    //     pause: 2e3
-    // },
-    // {
-    //     type: "plain",
-    //     author: _members.lj,
-    //     content: "欢迎家长朋友来到美吉姆大型父母学堂讲座现场",
-    //     //flag: "emoji-welcome"
-    // },
-    // {
-    //     type: "plain",
-    //     author: _members.lj,
-    //     content: "美吉姆成长金字塔（互动技能及发育追踪体系）已经上线很久了，您想了解吗？"
-    // },
-    // {
-    //     type: "picture",
-    //     author: _members.lj,
-    //     content: _imgFileUrl+"/chengzhangjinzita.jpeg",
-    //     pause: 4e3
-    // },
+    {
+        type: "plain",
+        author: _members.lj,
+        content: "Hi，我是Mymo",
+        pause: 2e3
+    },
+    {
+        type: "plain",
+        author: _members.lj,
+        content: "欢迎家长朋友来到美吉姆大型父母学堂讲座现场",
+        //flag: "emoji-welcome"
+        pause: 2e3
+    },
+    {
+        type: "plain",
+        author: _members.lj,
+        content: "美吉姆成长金字塔（互动技能及发育追踪体系）已经上线很久了，您想了解吗？",
+        pause: 2e3
+    },
+    {
+        type: "picture",
+        author: _members.lj,
+        content: _imgFileUrl+"/chengzhangjinzita.jpeg",
+        pause: 2e3
+    },
     {
         type: "plain",
         author: _members.lj,
@@ -84,7 +86,8 @@ function geneDialog(e) {
     {
         type: "plain",
         author: _members.lj,
-        content: "美吉姆成长金字塔是美吉姆为0-6岁儿 童家庭量身打造的成长解决方案，是一 套针对0-6岁小朋友的互动技能几发育 追踪识别系统。"
+        content: "美吉姆成长金字塔是美吉姆为0-6岁儿 童家庭量身打造的成长解决方案，是一 套针对0-6岁小朋友的互动技能几发育 追踪识别系统。",
+        pause: 2e3
     },
     {
         type: "plain",
@@ -104,19 +107,19 @@ function geneDialog(e) {
         content: "了解课程"
     },
     {
-        type: "plain",
-        author: _members.lj,
-        content: "美吉姆三大课程介绍" + _translate2.replace("%placehold%", "欢动课、艺术课、音乐课课程介绍"),
-        pause: 4e3,
-        linkplain:"openKecheng",
-        linkcolor:"blue",
-        linkimg:"https://ss0.bdstatic.com/-0U0bnSm1A5BphGlnYG/tam-ogel/679112633afafbbfe544024ecc21b79f_121_121.jpg",
-
-    },
-    {
         type: "picture",
         author: _members.lj,
         content: _imgFileUrl+"/kecheng.jpg",
+        pause: 2e3
+    },
+    {
+        type: "plain",
+        author: _members.lj,
+        content: "美吉姆三大课程介绍" + _translate2.replace("%placehold%", "欢动课、艺术课、音乐课课程介绍"),
+        //pause: 4e3,
+        linkplain:"openKecheng",
+        linkcolor:"blue",
+        linkimg:"https://ss0.bdstatic.com/-0U0bnSm1A5BphGlnYG/tam-ogel/679112633afafbbfe544024ecc21b79f_121_121.jpg",
     }
     ],
     _dialog.d3 = [{
@@ -143,28 +146,32 @@ function geneDialog(e) {
     {
         type: "plain",
         author: _members.lj,
-        content: "我猜，您一定喜欢这些！！！ "
+        content: "我猜，您一定喜欢这些！！！ ",
+        pause: 2e3
     },
     {
         type: "picture",
         author: _members.lj,
-        content: _imgFileUrl+"/chengzhangjinzita.jpeg",
+        content: _imgFileUrl+"/一.jpg",
+        pause: 2e3
     },
     {
         type: "picture",
         author: _members.lj,
-        content: _imgFileUrl+"/chengzhangjinzita.jpeg",
+        content: _imgFileUrl+"/二.jpg",
+        pause: 2e3
     },
     {
         type: "picture",
         author: _members.lj,
-        content: _imgFileUrl+"/chengzhangjinzita.jpeg",
-    },
-    {
-        type: "picture",
-        author: _members.lj,
-        content: _imgFileUrl+"/chengzhangjinzita.jpeg",
+        content: _imgFileUrl+"/三.jpg",
+        pause: 2e3
     }
+    // {
+    //     type: "picture",
+    //     author: _members.lj,
+    //     content: _imgFileUrl+"/chengzhangjinzita.jpeg",
+    // }
     ],
     _dialog.d4_2 = [{
         type: "plain",
@@ -174,32 +181,38 @@ function geneDialog(e) {
     {
         type: "plain",
         author: _members.lj,
-        content: "问到了关键，今天我们老板可是下血本喽！ ！！"
+        content: "问到了关键，今天我们老板可是下血本喽！ ！！",
+        pause: 2e3
     },
     {
         type: "picture",
         author: _members.lj,
-        content: _imgFileUrl+"/401536058855_.pic.jpg",
+        content: _imgFileUrl+"/6重礼.jpg",
+        pause: 2e3
     },
     {
         type: "plain",
         author: _members.lj,
-        content: "还有一重大礼，就在咨询处那里！"
+        content: "还有一重大礼，就在咨询处那里！",
+        pause: 2e3
     },
     {
         type: "plain",
         author: _members.lj,
-        content: "这已经是年度钜惠了，赶上开业预售的价格了，仅限今天哦！"
+        content: "这已经是年度钜惠了，赶上开业预售的价格了，仅限今天哦！",
+        pause: 2e3
     },
     {
         type: "plain",
         author: _members.lj,
-        content: "场地后方的咨询区，随时欢迎您！"
+        content: "场地后方的咨询区，随时欢迎您！",
+        pause: 2e3
     },
     {
         type: "plain",
         author: _members.lj,
-        content: "对了，还有2件事儿，差点忘了告诉您！"
+        content: "对了，还有2件事儿，差点忘了告诉您！",
+        pause: 2e3
     }
     ],
     _dialog.d5 = [{
@@ -212,7 +225,7 @@ function geneDialog(e) {
         author: _members.lj,
         content: "后面那家做儿童艺术的，叫艾涂图，也是我们家的兄弟品牌，今天也有大优惠哦！",
         //flag: "emoji",
-        //pause: 5e3
+        pause: 2e3
     },
     {
         type: "plain",
@@ -223,221 +236,52 @@ function geneDialog(e) {
         type: "plain",
         author: _members.lj,
         content: "以上优惠，仅限今日哦！\n 帮忙转告下您身边的好友呗！！！",
-        pause: 100
+        pause: 2e3
     },
     {
         type: "plain",
         author: _members.lj,
-        content: "我们的地址：xxxx \n 万达：xxxx \n爱琴海：xxx",
-        pause: 100
+        content: "我们的地址 \n 万达美吉姆：烟台市芝罘区万达十字街友谊街c-123美吉姆早教 0535-6661880 \n 爱琴海艾涂图：烟台市经济技术开发区衡山路18号 万行爱琴海购物公园F2021 0535-3038880 \n 爱琴海艾涂图：烟台市经济技术开发区衡山路18号 万行爱琴海购物公园F2021 0535-3389990",
+        pause: 2e3
     },
     {
         type: "plain",
         author: _members.lj,
         content: "好嘞，您可以抬头，认真学习啦。感谢您的支持与配合！",
-        pause: 100
+        pause: 2e3
     }
     ],
-    // _dialog.d6 = [{
-    //     type: "plain",
-    //     author: _members.me,
-    //     content: "咋买呢"
-    // },
-    // {
-    //     type: "plain",
-    //     author: _members.lb,
-    //     content: "这个我来回答，小米网5月17日周二首批开售3GB+32GB版本，小米之家17日也同步开售哦",
-    //     pause: 2500
-    // },
-    // {
-    //     type: "picture",
-    //     author: _members.lb,
-    //     content: _imgUrl + "d-6-fcode.jpg",
-    //     pause: 2e3
-    // },
-    // {
-    //     type: "plain",
-    //     author: _members.ld,
-    //     content: "我也没有" + gif.cry + gif.cry + gif.cry
-    // },
-    // {
-    //     type: "plain",
-    //     author: _members.kk,
-    //     content: "我也没有" + gif.cry + gif.cry
-    // },
-    // {
-    //     type: "plain",
-    //     author: _members.lb,
-    //     content: "除了小米网和小米之家，天猫、京东、苏宁等电商平台都能买到哦，请多留意～"
-    // }],
-    // _dialog.d7 = [{
-    //     type: "plain",
-    //     author: _members.me,
-    //     content: "彩蛋是什么呀？"
-    // },
-    // {
-    //     type: "system",
-    //     content: "沈腾加入群聊"
-    // },
-    // {
-    //     type: "plain",
-    //     author: _members.st,
-    //     content: "彩蛋在这儿呢"
-    // },
-    // {
-    //     type: "plain",
-    //     author: _members.st,
-    //     content: "哈哈哈" + gif.lol + gif.lol + gif.lol
-    // },
-    // {
-    //     type: "plain",
-    //     author: _members.st,
-    //     content: "我们和小米合作了一系列脑洞大开的大片，你要先看哪个？",
-    //     pause: 2e3
-    // }],
-    // _dialog.d8 = [{
-    //     type: "plain",
-    //     author: _members.me,
-    //     content: "我听了这么多，老板们发个红包呗"
-    // },
-    // {
-    //     type: "system",
-    //     content: "生态链刘德退出群聊",
-    //     pause: 500
-    // },
-    // {
-    //     type: "system",
-    //     content: "小米网林斌退出群聊",
-    //     pause: 400
-    // },
-    // {
-    //     type: "system",
-    //     content: "MIUI洪锋退出群聊",
-    //     pause: 700
-    // },
-    // {
-    //     type: "system",
-    //     content: "小米电视王川退出群聊",
-    //     pause: 400
-    // },
-    // {
-    //     type: "system",
-    //     content: "小米路由云KK退出群聊",
-    //     pause: 500
-    // },
-    // {
-    //     type: "system",
-    //     content: "手机研发周光平退出群聊",
-    //     pause: 1500
-    // },
-    // {
-    //     type: "plain",
-    //     author: _members.lwq,
-    //     content: "哈哈，大家开个玩笑，微信公众号现在不允许H5发红包了哦.."
-    // },
-    // {
-    //     type: "plain",
-    //     author: _members.lwq,
-    //     content: "但是到16号为止，小米网有预约赢手机的活动，每2小时抽1台，你可以去小米网看看"
-    // },
-    // {
-    //     type: "plain",
-    //     author: _members.lwq,
-    //     content: "说不定会中手机呢"
-    // }],
-    // _dialog.d9 = [{
-    //     type: "plain",
-    //     author: _members.me,
-    //     content: "不聊了，我妈喊我回家吃饭了"
-    // },
-    // {
-    //     type: "plain",
-    //     author: _members.me,
-    //     content: "感谢各位老板介绍，我能把我们的聊天记录晒给朋友们吗？"
-    // },
-    // {
-    //     type: "plain",
-    //     author: _members.lj,
-    //     content: "当然可以"
-    // },
-    // {
-    //     type: "plain",
-    //     author: _members.lb,
-    //     content: "感谢 " + e
-    // },
-    // {
-    //     type: "plain",
-    //     author: _members.hf,
-    //     content: "大屏手机就是小米Max，" + e + "再见"
-    // },
-    // {
-    //     type: "plain",
-    //     author: _members.wc,
-    //     content: "大屏手机就是小米Max，" + e + "再见"
-    // },
-    // {
-    //     type: "plain",
-    //     author: _members.lwq,
-    //     content: "大屏手机就是小米Max，" + e + "再见",
-    //     pause: 5e3
-    // },
-    // {
-    //     type: "system",
-    //     content: "本活动页面中涉及图片、数据及宣传用语的详细说明，来源自小米官网mi.com，以官网信息为准；相关信息不作为买卖交易条件，仅供参考；因客观环境变化，测试数据会有偏差；活动页面中合伙人及沈腾对话均为活动用语，不代表本人言论立场。"
-    // }],
-    // _dialog.d2_1 = [{
-    //     type: "plain",
-    //     author: _members.me,
-    //     content: "我觉得能放个30部影片已经很大了！"
-    // },
-    // {
-    //     type: "plain",
-    //     author: _members.wc,
-    //     content: "那你可就小看小米Max了，它最大可是能放下700集左右的海贼王的！"
-    // },
-    // {
-    //     type: "plain",
-    //     author: _members.me,
-    //     content: "果然是大容量啊！"
-    // }],
-    // _dialog.d2_2 = [{
-    //     type: "plain",
-    //     author: _members.me,
-    //     content: "我觉得能放个80集美剧已经很牛了！"
-    // },
-    // {
-    //     type: "plain",
-    //     author: _members.wc,
-    //     content: "那你可就小看小米Max了，它最大可是能放下700集左右的海贼王的！",
-    //     pause: 3e3
-    // },
-    // {
-    //     type: "plain",
-    //     author: _members.me,
-    //     content: "果然是大容量啊！"
-    // }],
-    // _dialog.d2_3 = [{
-    //     type: "plain",
-    //     author: _members.me,
-    //     content: "既然容量这么大，应该能放一整部海贼王吧？"
-    // },
-    // {
-    //     type: "plain",
-    //     author: _members.wc,
-    //     content: "你太厉害了，小米Max通过扩展卡最大存储达到256GB，700集左右的《海贼王》存进去杠杠的！",
-    //     pause: 3e3
-    // },
-    // {
-    //     type: "plain",
-    //     author: _members.me,
-    //     content: "果然是大容量啊！"
-    // }],
-    // _dialog.d7_1 = [{
-    //     type: "plain",
-    //     author: _members.st,
-    //     content: "这个彩蛋很给力吧？你再问问老板们其他问题，我也一起了解一下。",
-    //     pause: 2800
-    // }],
+    _dialog.d6 = [{
+        type: "plain",
+        author: _members.me,
+        content: "了解更多"
+    },
+    {
+        type: "plain",
+        author: _members.lj,
+        content: "美吉姆成长金字塔是美吉姆为0-6岁儿童家庭量身打造的成长解决方案，是一套针对0-6岁小朋友的互动技能及发育追踪识别体系。",
+        pause: 2e3
+    },
+    {
+        type: "plain",
+        author: _members.lj,
+        content: "宝宝成长，不能再用身体健康这个单一的指标去衡量，对于宝宝综合素质的培养才是合格家长的目标。通过成长金字塔，家长可以对宝宝不同年龄段能力的成长进行直观的观察和追踪宝宝，并及时给到宝宝更多鼓励和帮助。成长金字塔将儿童每个阶段所要获得的技能分成了不同的2－6个成长技能积木。在这个过程中，培养小朋友朝着自己的目标努力，完成每个技能积木的学习；教师在教学过程中，也会针对每个技能积木给予小朋友因人而异的鼓励和指导，做到因材施教；家长也能够追踪自已孩子每个技能积木的学习情况，给予及时的指导和鼓励，认可小朋友取得的成就，从而帮助孩子更好的成长。",
+        pause: 2e3
+    },
+    {
+        type: "plain",
+        author: _members.lj,
+        content: "成长金字塔以激励的方式，明确每位小朋友的个人目标，完成每个阶段所有技能积木的学习，以获得并掌握该阶段所应具备的各项发育及技能。随着小朋友接受每项挑战并获得成功，他们的自尊心和自信心也随之增长。在完成技能积木的过程中，小朋友学习如何朝着目标而努力，老师也将针对每个小朋友的实际技能水平因材施教，而家长也可以更加准确直观地了解小朋友每个阶段的成长情况，并给予及时的鼓励及帮助。"
+    }],
+    _dialog.d7 = [{
+        type: "plain",
+        author: _members.me,
+        content: "下一步"
+    },{
+        type: "plain",
+        author: _members.lj,
+        content: "了解了宝宝现阶段的成长技能，难道您就不好奇美吉姆是通过什么课程实现这些技能的吗？"
+    }],
     _dialog.dr_1 = [
     {
         type: "picture",
@@ -448,55 +292,13 @@ function geneDialog(e) {
         type: "plain",
         author: _members.lj,
         content: ""
-    },{
-        type: "plain",
-        author: _members.lj,
-        content: "了解了宝宝现阶段的成长技能，难道您就不好奇美吉姆是通过什么课程实现这些技能的吗？"
     }],
     _dialog.dr_2 = [{
         type: "plain",
         author: _members.lj,
         content: ""
     }]
-    // _dialog.dr_3 = [{
-    //     type: "plain",
-    //     author: _members.lwq,
-    //     content: "再看看其他方面的特性吧，关于小米Max我们还有很多要跟你分享"
-    // }],
-    // _dialog.dv_1 = [{
-    //     type: "plain",
-    //     author: _members.lb,
-    //     content: "怎么样？够大吗？"
-    // },
-    // {
-    //     type: "plain",
-    //     author: _members.me,
-    //     content: "好大，好轻薄！小米的妹子也很美" + gif.lol + gif.lol + gif.lol
-    // },
-    // {
-    //     type: "plain",
-    //     author: _members.hf,
-    //     content: "同感，哈哈..还有啥感兴趣的？"
-    // }],
-    // _dialog.dv_2 = [{
-    //     type: "system",
-    //     content: "视频通话已拒绝"
-    // },
-    // {
-    //     type: "plain",
-    //     author: _members.lwq,
-    //     content: "了解点儿别的吧？"
-    // }],
-    // _dialog.dreg_1 = [{
-    //     type: "plain",
-    //     author: _members.lb,
-    //     content: "赞！你已经成功预约了。5月17日可以到小米网来购买" + gif.lol
-    // }],
-    // _dialog.dreg_2 = [{
-    //     type: "plain",
-    //     author: _members.hf,
-    //     content: "系统说预约失败，再点一下试试"
-    // }]
+
 } !
 function(e) {
     function t(e) {
@@ -836,12 +638,15 @@ $(document).ready(function() {
         }),
         $(document).on("click", ".openSkillTest",
         function(e) {
+            //alert(e)
             // "true" != $(this).attr("translated") && $(this).html($(this).siblings(".J_actualContent").html()).attr("translated", "true")
             $(".J_skillTestDiv").filter('[data-gallery="1"]').show();
             // $(".J_gallerySlide").css({
             //     "line-height": $(window).height() + "px"
             // });
-
+            //alert($(".J_choice").html());
+            //
+            // $(".choosen").addClass("J_inputWrapper")
             var t = $(".J_galleryClose"),
             a = $(".J_skillTestDiv");
             t.on("click",
@@ -851,9 +656,8 @@ $(document).ready(function() {
         }),
         $(document).on("click", ".openKecheng",
         function(e) {
-            "true" != $(this).attr("translated") && $(this).html($(this).siblings(".J_actualContent").html()).attr("translated", "true")
+            //"true" != $(this).attr("translated") && $(this).html($(this).siblings(".J_actualContent").html()).attr("translated", "true")
 
-alert($(".J_KechengDiv").filter('[data-gallery="1"]').html());
             $(".J_KechengDiv").filter('[data-gallery="1"]').show();
             $(".J_gallerySlide").css({
                 "line-height": $(window).height() + "px"
@@ -869,18 +673,18 @@ alert($(".J_KechengDiv").filter('[data-gallery="1"]').html());
 
 
 
-        $(document).on("click", ".J_register",
-        function(e) {
-            var t = $(this);
-            "true" != $(this).attr("registered") && $.ajax({
-                url: "http://xmt.www.mi.com/index.php?id=338&do=book",
-                type: "POST",
-                dataType: "json",
-                success: function(e) {
-                    e && 1e3 === e.header.code ? (t.html("您已成功预约").attr("registered", "true"), l(_dialog.dreg_1)) : l(_dialog.dreg_2)
-                }
-            })
-        }),
+        // $(document).on("click", ".J_register",
+        // function(e) {
+        //     var t = $(this);
+        //     "true" != $(this).attr("registered") && $.ajax({
+        //         url: "http://xmt.www.mi.com/index.php?id=338&do=book",
+        //         type: "POST",
+        //         dataType: "json",
+        //         success: function(e) {
+        //             e && 1e3 === e.header.code ? (t.html("您已成功预约").attr("registered", "true"), l(_dialog.dreg_1)) : l(_dialog.dreg_2)
+        //         }
+        //     })
+        // }),
 
         $(document).on("click", ".startSkillTest",
         function(e) {
@@ -958,8 +762,15 @@ alert($(".J_KechengDiv").filter('[data-gallery="1"]').html());
                 _dialog.dr_1[0]['content'] = _skillImg;
                 _dialog.dr_1[1]['content'] = _skillText;
             }
+            // $(".J_choice[data-choice="0"]").hide();
+            // $(".J_choice").find('.J_choic[data-choice="2"]').show();
+            //alert($(".J_choice").find('.choosen').html())
 
+            // $(".J_choiceWrapper").find('.J_choice[data-choice="0"]').hide();
+            // $(".J_choiceWrapper").find('.J_choice[data-choice="6"]').show();
             l(_dialog.dr_1)
+
+
 
             //alert(month)
             // "true" != $(this).attr("registered") && $.ajax({
