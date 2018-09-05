@@ -3,7 +3,7 @@ function geneDialog(e) {
         lj: {
             id: "lj",
             name: "",
-            avatar: "https://ss0.bdstatic.com/-0U0bnSm1A5BphGlnYG/tam-ogel/679112633afafbbfe544024ecc21b79f_121_121.jpg"
+            avatar: _imgFileUrl+"/美吉姆头像.jpg"
         },
         lwq: {
             id: "lwq",
@@ -54,30 +54,31 @@ function geneDialog(e) {
         content: "Hi，我是Mymo",
         pause: 2e3
     },
-    {
-        type: "plain",
-        author: _members.lj,
-        content: "欢迎家长朋友来到美吉姆大型父母学堂讲座现场",
-        //flag: "emoji-welcome"
-        pause: 2e3
-    },
-    {
-        type: "plain",
-        author: _members.lj,
-        content: "美吉姆成长金字塔（互动技能及发育追踪体系）已经上线很久了，您想了解吗？",
-        pause: 2e3
-    },
-    {
-        type: "picture",
-        author: _members.lj,
-        content: _imgFileUrl+"/chengzhangjinzita.jpeg",
-        pause: 2e3
-    },
-    {
-        type: "plain",
-        author: _members.lj,
-        content: "讲座开始之前，要不要了解下我们宝宝这个阶段的成长技能呢？"
-    }],
+    // {
+    //     type: "plain",
+    //     author: _members.lj,
+    //     content: "欢迎家长朋友来到美吉姆大型父母学堂讲座现场",
+    //     //flag: "emoji-welcome"
+    //     pause: 2e3
+    // },
+    // {
+    //     type: "plain",
+    //     author: _members.lj,
+    //     content: "美吉姆成长金字塔（互动技能及发育追踪体系）已经上线很久了，您想了解吗？",
+    //     pause: 2e3
+    // },
+    // {
+    //     type: "picture",
+    //     author: _members.lj,
+    //     content: _imgFileUrl+"/chengzhangjinzita.jpeg",
+    //     pause: 2e3
+    // },
+    // {
+    //     type: "plain",
+    //     author: _members.lj,
+    //     content: "讲座开始之前，要不要了解下我们宝宝这个阶段的成长技能呢？"
+    // }
+    ],
     _dialog.d1 = [{
         type: "plain",
         author: _members.me,
@@ -606,6 +607,9 @@ $(document).ready(function() {
             clearTimeout(window.waitUser),
             l(_dialog["d" + a],
             function() {
+                if ( parseInt(a) == 1 && parseInt(n) == 6) {
+                    $(".J_choiceWrapper").hide();
+                }
                 o && (m(n, 100), window.waitUser = setTimeout(function() {
                     //var e = Math.floor(3 * Math.random() + 1);
                     //l(_dialog["dr_" + a])
@@ -645,7 +649,7 @@ $(document).ready(function() {
             //     "line-height": $(window).height() + "px"
             // });
             //alert($(".J_choice").html());
-            //
+            // $(".J_choiceWrapper").hide()
             // $(".choosen").addClass("J_inputWrapper")
             var t = $(".J_galleryClose"),
             a = $(".J_skillTestDiv");
@@ -695,9 +699,18 @@ $(document).ready(function() {
             var Box_isvip = $(".Box_isvip").val();
             var Box_mobile = $(".Box_mobile").val();
 
-            if (!Box_birthday || Box_birthday == undefined) {
+            if (Box_birthday == "" || Box_birthday === undefined) {
                 alert("请选择宝宝生日");return false;
             }
+
+            if (Box_name == "" || Box_name === undefined) {
+                alert("请填写宝宝姓名");return false;
+            }
+
+            if (Box_mobile == "" || Box_mobile === undefined) {
+                alert("请填写手机号");return false;
+            }
+            
             var stopDate = new Date();
             console.log(Box_birthday);
             console.log(new Date(Box_birthday));
@@ -768,9 +781,13 @@ $(document).ready(function() {
 
             // $(".J_choiceWrapper").find('.J_choice[data-choice="0"]').hide();
             // $(".J_choiceWrapper").find('.J_choice[data-choice="6"]').show();
-            l(_dialog.dr_1)
 
+            //l(_dialog.dr_1,)
 
+            l(_dialog.dr_1,
+            function() {
+                $(".J_choiceWrapper").show()
+            })
 
             //alert(month)
             // "true" != $(this).attr("registered") && $.ajax({
