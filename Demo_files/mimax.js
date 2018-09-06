@@ -552,10 +552,10 @@ $(document).ready(function() {
     function p() {
         n(),
         geneDialog(_userName),
-        l(_dialog.d0,
-        function() {
-            $(".J_noticeInput").show()
-        }),
+        // l(_dialog.d0,
+        // function() {
+        //     $(".J_noticeInput").show()
+        // }),
         $(".box_ft").on("click", ".J_choice .J_liNext",
         function(e) {
             e.preventDefault();
@@ -882,6 +882,10 @@ $(document).ready(function() {
     			fy=0;
                 $(".main").hide()
                 $(".chat").show()
+                l(_dialog.d0,
+                function() {
+                    $(".J_noticeInput").show()
+                })
     			//$(".main").addClass("move-right")
     		}
         });
