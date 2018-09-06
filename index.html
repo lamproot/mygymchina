@@ -8,9 +8,82 @@
 	<script src="./Demo_files/hm.js?t=1.0.8"></script>
 	<!-- <script>!function(n){var e=n.document,t=e.documentElement,i=720,o=i/32,a="orientationchange"in n?"orientationchange":"resize",d=function(){var n=t.clientWidth||320,n=n>720?720:320>n?320:n;t.style.fontSize=n/o+"px"};e.addEventListener&&n.addEventListener(a,d,!1),d()}(window);</script> -->
 	<link rel="stylesheet" type="text/css" href="./Demo_files/mimax.css?t=1.0.8">
+	<style media="screen">
+	.divbg-top{background-position: center top;}
+	.w100{width:100%; display: block}
+	.h100{height:100%;}
+	.s{position: absolute;}
+	.s img{display: block;}
+	.main{z-index: 0; overflow: hidden;}
+	.center{text-align: center;}
+	.bg{background-color: rgba(0,0,0,.8); z-index: 10}
+	.none{display: none}
+
+		i,em,li{font-style:normal; list-style:none;}
+		ul{overflow: hidden;}
+		input{outline:none}
+			.main{z-index: 0; overflow: hidden;}
+		.center{text-align: center;}
+		.bg{background-color: rgba(0,0,0,.8); z-index: 10}
+		/*m1*/
+		.m1{color:#fff; z-index: 10}
+		.m1 .s1{width:100%; text-align: center; padding-top: 5%;margin:0% auto 3% auto; font-size:4.8rem; line-height:1;}
+		.m1 .s2{width:100%; text-align: center; font-size:1rem; line-height:1; margin: 0 auto 8% auto;}
+		.m1 .s3{width:90%; margin: auto; padding:2% 0; border-top:1px solid rgba(40, 64, 76, .8); border-bottom:1px solid rgba(40, 64, 76, .8);}
+		.m1 .s3 li{float:left; font-size:1rem; line-height:1.5;}
+		.m1 .s3 li:first-child{width:9%;}
+		.m1 .s3 li:first-child>img{width: 60%; margin-top:8%;}
+		.m1 .s3 li>span{font-size:1rem; color:#5590ad;}
+		.m1 .s3{-webkit-animation: xx .8s .2s forwards; opacity: 0}
+		@-webkit-keyframes xx {
+		    0% {opacity: 0}
+			100% {opacity: 1}
+		}
+		.m1 .s4{width:100%; left:0; bottom:1.5%;}
+		.m1 .s5{width:222px; height:38px; margin-left:-111px; left:50%; bottom:6%; background-position: 0 0; background-repeat: no-repeat; -webkit-transform: scale(.5)}
+		.m1 .s5{-webkit-animation: huadong 1.6s steps(30) infinite;}
+		@-webkit-keyframes huadong {
+		    0% {background-position:0;}
+			100% {background-position:-6660px 0}
+		}
+	</style>
  </head>
 <body>
-	<div class="chat">
+	<div class="div main" style="width: 320px; height: 568px;">
+		<div class="div m1 imgbg" data-src="index_files/1.jpg" style="width: 320px; height: 568px; background-image: url(&quot;index_files/1.jpg&quot;);">
+			<div class="div bb" style="width: 320px; height: 568px;">
+				<div class="s1">14:45</div>
+				<div class="s2">09月06日 星期四</div>
+				<div class="s3">
+					<ul>
+						<li><img data-src="index_files/3.png" src="./index_files/3.png"></li>
+						<li>微信 <span>现在</span>
+							<br>
+							你收到一条来自 美吉姆 的消息
+							<br>
+							<span>滑动来查看</span></li>
+					</ul>
+				</div>
+
+				<div class="s3">
+					<ul>
+						<li><img data-src="index_files/3.png" src="./index_files/3.png"></li>
+						<li>微信 <span>现在</span>
+							<br>
+							你收到一条来自 美吉姆 的消息
+							<br>
+							<span>滑动来查看</span></li>
+					</ul>
+				</div>
+				<div class="" style="text-align:center;">
+					<img src="https://ss2.bdstatic.com/8_V1bjqh_Q23odCf/pacific/upload_23588549_1491817275029.png" alt="">
+				</div>
+				<div class="s s4"><img data-src="index_files/2.png" class="w100" src="./index_files/2.png"></div>
+				<div class="s s5 imgbg" data-src="index_files/hh.png" style="background-image: url(&#39;index_files/hh.png&#39;);"></div>
+			</div>
+		</div>
+	</div>
+	<div class="chat" style="display:none;background-image:url(./Demo_files/441536214643_.pic.jpg); background-size: cover; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover;">
 		<div class="box_bd scroll-wrapper">
 			<canvas id="emoji" class="emoji-canvas" width="720" height="1500"></canvas>
 			<div class="scroll-content J_scrollContent">
@@ -86,8 +159,11 @@
 					<li class="J_liNext li-2 li-h" data-target-dialog="4_1" data-target-choice="4">
 						<a href="javascript:void(0);" onclick="_hmt.push([&#39;_trackEvent&#39;,&#39;mimaxH5&#39;,&#39;讲座礼品&#39;]);">讲座礼品</a>
 					</li>
-					<li class="J_liNext li-2 li-h" data-target-dialog="4_2" data-target-choice="5">
+					<li class="J_liNext li-2 li-h" data-target-dialog="4_2" data-target-choice="4">
 						<a href="javascript:void(0);" onclick="_hmt.push([&#39;_trackEvent&#39;,&#39;mimaxH5&#39;,&#39;优惠政策&#39;]);">优惠政策</a>
+					</li>
+					<li class="J_liNext li-2 li-h" data-target-dialog="5" data-target-choice="">
+						<a href="javascript:void(0);" onclick="_hmt.push([&#39;_trackEvent&#39;,&#39;mimaxH5&#39;,&#39;直接跳过&#39;]);">直接跳过</a>
 					</li>
 				</ul>
 

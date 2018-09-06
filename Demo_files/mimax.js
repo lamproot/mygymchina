@@ -877,5 +877,42 @@ $(document).ready(function() {
             this
         }
     },
-    p()
+    p();
+    // function fanye(e){
+    // 	var fy=1;
+    // 	$(".main").on("touchstart",function(e) {
+    // 		$(".main").hide()
+    //         $(".chat").show()
+    // 	});
+    // };
+    fanye();
+    function fanye(){
+    	var fy=1;
+        $(document).on("touchstart", ".main",
+        function(e) {
+            x1 = e.originalEvent.targetTouches[0].pageX;
+        });
+
+        $(document).on("touchmove", ".main",
+        function(e) {
+            e.preventDefault()
+        });
+
+        $(document).on("touchend", ".main",
+        function(e) {
+            x2 = e.originalEvent.changedTouches[0].pageX;
+    		if((x1-x2)<-10){ //往右滑
+    			if(fy==0)return false;
+    			fy=0;
+                $(".main").hide()
+                $(".chat").show()
+    			//$(".main").addClass("move-right")
+    		}
+        });
+
+    }
+    $(document).on("touchstart", ".main",
+    function(e) {
+        x1 = e.originalEvent.targetTouches[0].pageX;
+    });
 });
