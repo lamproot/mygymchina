@@ -4,46 +4,6 @@ function geneDialog(e) {
             id: "lj",
             name: "",
             avatar: _imgFileUrl+"/美吉姆头像.jpg"
-        },
-        lwq: {
-            id: "lwq",
-            name: "",
-            avatar: _imgUrl + "a-lwq.png"
-        },
-        lb: {
-            id: "lb",
-            name: "",
-            avatar: _imgUrl + "a-lb.png"
-        },
-        zgp: {
-            id: "zgp",
-            name: "",
-            avatar: _imgUrl + "a-zgp.png"
-        },
-        wc: {
-            id: "wc",
-            name: "",
-            avatar: _imgUrl + "a-wc.png"
-        },
-        ld: {
-            id: "ld",
-            name: "",
-            avatar: _imgUrl + "a-ld.png"
-        },
-        hf: {
-            id: "hf",
-            name: "",
-            avatar: _imgUrl + "a-hf.png"
-        },
-        kk: {
-            id: "kk",
-            name: "",
-            avatar: _imgUrl + "a-kk.png"
-        },
-        st: {
-            id: "st",
-            name: "",
-            avatar: _imgUrl + "a-st.png"
         }
     };
     _members = $.extend(_members, t),
@@ -54,24 +14,24 @@ function geneDialog(e) {
         content: "Hi，我是Mymo",
         pause: 2e3
     },
-    {
-        type: "plain",
-        author: _members.lj,
-        content: "欢迎家长朋友来到美吉姆大型父母学堂讲座现场",
-        //flag: "emoji-welcome"
-        pause: 2e3
-    },
-    {
-        type: "plain",
-        author: _members.lj,
-        content: "美吉姆成长金字塔（互动技能及发育追踪体系）已经上线很久了。",
-        pause: 2e3
-    },
-    {
-        type: "plain",
-        author: _members.lj,
-        content: "讲座开始之前，要不要了解下我们宝宝这个阶段的成长技能呢？"
-    }
+    // {
+    //     type: "plain",
+    //     author: _members.lj,
+    //     content: "欢迎家长朋友来到美吉姆大型父母学堂讲座现场",
+    //     //flag: "emoji-welcome"
+    //     pause: 2e3
+    // },
+    // {
+    //     type: "plain",
+    //     author: _members.lj,
+    //     content: "美吉姆成长金字塔（互动技能及发育追踪体系）已经上线很久了。",
+    //     pause: 2e3
+    // },
+    // {
+    //     type: "plain",
+    //     author: _members.lj,
+    //     content: "讲座开始之前，要不要了解下我们宝宝这个阶段的成长技能呢？"
+    // }
     ],
     _dialog.d1 = [{
         type: "plain",
@@ -209,15 +169,16 @@ function geneDialog(e) {
         author: _members.lj,
         content: "场地后方的咨询区，随时欢迎您！",
         pause: 2e3
-    },
+    }
+    ],
+    _dialog.d5 = [
     {
         type: "plain",
         author: _members.lj,
         content: "对了，还有2件事儿，差点忘了告诉您！",
         pause: 2e3
-    }
-    ],
-    _dialog.d5 = [{
+    },
+    {
         type: "plain",
         author: _members.me,
         content: "还有什么事儿？"
