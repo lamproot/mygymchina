@@ -81,7 +81,7 @@ function geneDialog(e) {
         //pause: 4e3,
         linkplain:"openKecheng",
         linkcolor:"blue",
-        linkimg:"https://ss0.bdstatic.com/-0U0bnSm1A5BphGlnYG/tam-ogel/679112633afafbbfe544024ecc21b79f_121_121.jpg",
+        linkimg:_imgFileUrl+"美吉姆头像.jpg",
     }
     ],
     _dialog.d3 = [{
@@ -692,6 +692,21 @@ $(document).ready(function() {
             console.log(new Date(Box_birthday));
             console.log(stopDate);
             var month = monthDiff(new Date(Box_birthday),stopDate)
+
+            $.ajax({
+                url: "/index/",
+                type: "POST",
+                dataType: "json",
+                data:{
+                    "Box_name" : Box_name,
+                    "Box_birthday" : Box_birthday,
+                    "Box_isvip" : Box_isvip,
+                    "Box_mobile" : Box_mobile
+                },
+                success: function(e) {
+                    // e && 1e3 === e.header.code ? (t.html("您已成功预约").attr("registered", "true"), l(_dialog.dreg_1)) : l(_dialog.dreg_2)
+                }
+            })
             //alert(month)
 
             //金字塔1
