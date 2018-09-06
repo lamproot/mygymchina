@@ -915,4 +915,16 @@ $(document).ready(function() {
     function(e) {
         x1 = e.originalEvent.targetTouches[0].pageX;
     });
+
+    var myDate = new Date();
+    $(".bb>.s1").html(myRight(myDate.getHours(),2)+":"+myRight(myDate.getMinutes(),2));
+    $(".bb>.s2").html(myRight(myDate.getMonth()+1,2)+"月"+myRight(myDate.getDate(),2)+"日 "+myDay(myDate.getDay()));
+
+    function myRight(str, len){
+    	return ("0"+str).substr(-len);
+    }
+    function myDay(str){
+    	var Week = ['日','一','二','三','四','五','六'];
+        return '星期' + Week[str];
+    }
 });
