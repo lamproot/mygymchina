@@ -694,7 +694,7 @@ $(document).ready(function() {
             var month = monthDiff(new Date(Box_birthday),stopDate)
 
             $.ajax({
-                url: "/index/",
+                url: "http://mygymchina.iamtokenman.io/php/",
                 type: "POST",
                 dataType: "json",
                 data:{
