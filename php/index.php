@@ -8,7 +8,7 @@ $data = $_POST;
 //$mysqli->query($sql);
 $result = $mysqli->query("select * from mygymchina_cp where id =3");
 $row=mysqli_fetch_all($result,MYSQLI_ASSOC);
-
+echo json_encode($row);exit;
 foreach ($row as $key => $value) {
 	echo json_encode($value);exit;
 	$mysqli->query("SET NAMES utf8");
