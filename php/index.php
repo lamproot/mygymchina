@@ -8,6 +8,7 @@ $data = $_POST;
 //$mysqli->query($sql);
 $result = $mysqli->query("select * from mygymchina_cp where id =3");
 $row=mysqli_fetch_array($result,MYSQLI_ASSOC);
+echo json_encode($row);exit;
 $mysqli->query("SET NAMES utf8");
 $name = iconv("GBK//IGNORE", "UTF-8", $row['name']);
 echo "update mygymchina_cp set name = '{$row['name']}' where id = {$row['id']}";exit;
