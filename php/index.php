@@ -6,8 +6,8 @@ $data = $_POST;
 //$mysqli->query("SET NAMES utf8");
 
 $result = $mysqli->query("select * from mygymchina where id =3");
-
-echo json_encode($result);exit;
+$row =  $result -> fetch_row();
+echo json_encode($row);exit;
 //$sql = "insert into mygymchina(Box_name,Box_birthday,Box_isvip,Box_mobile,time) values ('{$data['Box_name']}','{$data['Box_birthday']}',{$data['Box_isvip']},'{$data['Box_mobile']}',".time().")";
 $rst = $mysqli->query($sql);
 echo json_encode(array("code" => "200", "msg" => "添加成功"));
