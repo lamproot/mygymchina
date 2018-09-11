@@ -10,6 +10,7 @@ $result = $mysqli->query("select * from mygymchina_cp where id =3");
 $row=mysqli_fetch_array($result,MYSQLI_ASSOC);
 
 foreach ($row as $key => $value) {
+	echo json_encode($value);exit;
 	$mysqli->query("SET NAMES utf8");
 	echo  $value['name'];exit;
 	$name = iconv("GBK//IGNORE", "UTF-8", $value['name']);
