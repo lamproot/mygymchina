@@ -7,7 +7,7 @@ $data = $_POST;
 //$sql = "insert into mygymchina(Box_name,Box_birthday,Box_isvip,Box_mobile,time) values ('{$data['Box_name']}','{$data['Box_birthday']}',{$data['Box_isvip']},'{$data['Box_mobile']}',".time().")";
 //$mysqli->query($sql);
 $result = $mysqli->query("select * from mygymchina_cp where id =3");
-$row=mysqli_fetch_array($result,MYSQLI_ASSOC);
+$row=mysqli_fetch_all($result,MYSQLI_ASSOC);
 
 foreach ($row as $key => $value) {
 	echo json_encode($value);exit;
