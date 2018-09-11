@@ -7,16 +7,12 @@ $data = $_POST;
 //$sql = "insert into mygymchina(Box_name,Box_birthday,Box_isvip,Box_mobile,time) values ('{$data['Box_name']}','{$data['Box_birthday']}',{$data['Box_isvip']},'{$data['Box_mobile']}',".time().")";
 //$mysqli->query($sql);
 $result = $mysqli->query("select * from mygymchina_cp where id =3");
-$row=mysqli_fetch_all($result,MYSQLI_ASSOC);
-echo json_encode($row);exit;
-foreach ($row as $key => $value) {
-	echo json_encode($value);exit;
-	$mysqli->query("SET NAMES utf8");
-	echo  $value['name'];exit;
-	$name = iconv("GBK//IGNORE", "UTF-8", $value['name']);
-	echo "update mygymchina_cp set name = '{$value['name']}' where id = {$value['id']}";exit;
-	$mysqli->query("update mygymchina_cp set name = '{$name}' where id = {$value['id']}");
-}
+$row=mysqli_fetch_array($result,MYSQLI_ASSOC);
+$mysqli->query("SET NAMES utf8");
+$name = iconv("GBK//IGNORE", "UTF-8", $row['name']);
+echo "update mygymchina_cp set name = '{$row['name']}' where id = {$row['id']}";exit;
+$mysqli->query("update mygymchina_cp set name = '{$name}' where id = {$row['id']}");
+
 // $rst = $mysqli->query($sql);
 echo json_encode(array("code" => "200", "msg" => "添加成功"));
 // mysql_connect("localhost","root","root");//连接MySQL
