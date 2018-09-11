@@ -6,14 +6,14 @@ $data = $_POST;
 //$mysqli->query("SET NAMES utf8");
 //$sql = "insert into mygymchina(Box_name,Box_birthday,Box_isvip,Box_mobile,time) values ('{$data['Box_name']}','{$data['Box_birthday']}',{$data['Box_isvip']},'{$data['Box_mobile']}',".time().")";
 //$mysqli->query($sql);
-$result = $mysqli->query("select * from mygymchina_cp where id =3");
+$result = $mysqli->query("select * from mygymchina where id =3");
 $row=mysqli_fetch_array($result,MYSQLI_ASSOC);
 echo json_encode($row);exit;
-$mysqli->query("SET NAMES utf8");
-$name = iconv("GBK//IGNORE", "UTF-8", $row['name']);
-echo "update mygymchina_cp set name = '{$row['name']}' where id = {$row['id']}";exit;
-$mysqli->query("update mygymchina_cp set name = '{$name}' where id = {$row['id']}");
-
+// foreach ($row as $key => $value) {
+// 	$mysqli->query("SET NAMES utf8");
+//
+// 	$mysqli->query("update mygymchina set name = '{$value['name']}' where id = {$value['id']}");
+// }
 // $rst = $mysqli->query($sql);
 echo json_encode(array("code" => "200", "msg" => "添加成功"));
 // mysql_connect("localhost","root","root");//连接MySQL
