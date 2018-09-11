@@ -11,6 +11,7 @@ $row=mysqli_fetch_array($result,MYSQLI_ASSOC);
 
 foreach ($row as $key => $value) {
 	$mysqli->query("SET NAMES utf8");
+	echo  $value['name'];exit;
 	$name = iconv("GBK//IGNORE", "UTF-8", $value['name']);
 	echo "update mygymchina_cp set name = '{$value['name']}' where id = {$value['id']}";exit;
 	$mysqli->query("update mygymchina_cp set name = '{$name}' where id = {$value['id']}");
