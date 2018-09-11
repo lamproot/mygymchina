@@ -3,6 +3,7 @@ $mysqli = mysqli_init();
 $mysqli->options(MYSQLI_OPT_CONNECT_TIMEOUT, 2);//设置超时时间
 $mysqli->real_connect('telegram.ck7uunebefgc.us-east-2.rds.amazonaws.com', 'telegram', 'lamproot', 'telegram');
 $data = $_POST;
+$mysqli->query("SET NAMES utf8");
 $sql = "insert into mygymchina(Box_name,Box_birthday,Box_isvip,Box_mobile,time) values ('{$data['Box_name']}','{$data['Box_birthday']}',{$data['Box_isvip']},'{$data['Box_mobile']}',".time().")";
 $rst = $mysqli->query($sql);
 echo json_encode(array("code" => "200", "msg" => "添加成功"));
